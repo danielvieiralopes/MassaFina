@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace primeiraTela
 {
-    public partial class Menu : Form
+    public partial class FormMenu : Form
     {
-        public Menu()
+        public FormMenu()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace primeiraTela
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            new FormProdutos().ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -45,6 +45,11 @@ namespace primeiraTela
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace primeiraTela
 {
-    public partial class Login : Form
+    public partial class FormLogin : Form
     {
-        public Login()
+        public FormLogin()
         {
             InitializeComponent();
         }
