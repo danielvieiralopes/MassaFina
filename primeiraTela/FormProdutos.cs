@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace primeiraTela
 {
-    public partial class FormProdutos : Form
+    public partial class FormProdutos : System.Windows.Forms.Form
     {
         public FormProdutos()
         {
@@ -70,6 +70,23 @@ namespace primeiraTela
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void gridControl2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Close();
+            new FormMenu().ShowDialog();
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            Close();
+            new FormLogin().ShowDialog();
         }
     }
 }
