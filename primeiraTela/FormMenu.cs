@@ -59,5 +59,10 @@ namespace primeiraTela
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new FormClientes().ShowDialog();
+        }
     }
 }

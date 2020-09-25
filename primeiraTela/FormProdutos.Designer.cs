@@ -56,7 +56,8 @@
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.searchControl1 = new DevExpress.XtraEditors.SearchControl();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.UserInput = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
@@ -67,7 +68,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -105,7 +106,6 @@
             this.gridControl2.Location = new System.Drawing.Point(0, 91);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.gridControl2.Size = new System.Drawing.Size(706, 287);
             this.gridControl2.TabIndex = 19;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -162,11 +162,12 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.searchControl1);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.UserInput);
             this.panel3.Controls.Add(this.toolStrip1);
+            this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -307,20 +308,33 @@
             // 
             this.gridColumn5.Name = "gridColumn5";
             // 
-            // searchControl1
+            // pictureBox2
             // 
-            this.searchControl1.Client = this.gridControl2;
-            this.searchControl1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.searchControl1.EditValue = "Pesquisar produto";
-            this.searchControl1.Location = new System.Drawing.Point(103, 25);
-            this.searchControl1.Name = "searchControl1";
-            this.searchControl1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.searchControl1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Repository.ClearButton(),
-            new DevExpress.XtraEditors.Repository.SearchButton()});
-            this.searchControl1.Properties.Client = this.gridControl2;
-            this.searchControl1.Size = new System.Drawing.Size(453, 18);
-            this.searchControl1.TabIndex = 17;
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.ImageLocation = "";
+            this.pictureBox2.Location = new System.Drawing.Point(537, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(28, 23);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // UserInput
+            // 
+            this.UserInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UserInput.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserInput.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.UserInput.Location = new System.Drawing.Point(103, 22);
+            this.UserInput.Name = "UserInput";
+            this.UserInput.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.UserInput.Size = new System.Drawing.Size(428, 19);
+            this.UserInput.TabIndex = 10;
+            this.UserInput.Text = "Pesquisar produto";
+            this.UserInput.TextChanged += new System.EventHandler(this.UserInput_TextChanged);
             // 
             // FormProdutos
             // 
@@ -347,7 +361,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -381,6 +395,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraEditors.SearchControl searchControl1;
+        private System.Windows.Forms.TextBox UserInput;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
