@@ -24,12 +24,13 @@ namespace primeiraTela
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Close();
+            
             new FormProdutos().ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            new FormPedidos().ShowDialog();
 
         }
 
