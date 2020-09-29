@@ -16,5 +16,10 @@ namespace primeiraTela
         {
             InitializeComponent();
         }
+
+        private void FormFormCadastroPedido_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
