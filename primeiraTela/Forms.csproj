@@ -54,6 +54,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormCadastroMateriaPrima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroMateriaPrima.Designer.cs">
+      <DependentUpon>FormCadastroMateriaPrima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMateriaPrima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMateriaPrima.Designer.cs">
+      <DependentUpon>FormMateriaPrima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastroOrçamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroOrçamento.Designer.cs">
+      <DependentUpon>FormCadastroOrçamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFormCadastroPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFormCadastroPedido.Designer.cs">
+      <DependentUpon>FormFormCadastroPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastroProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroProduto.Designer.cs">
+      <DependentUpon>FormCadastroProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroCliente.Designer.cs">
+      <DependentUpon>FormCadastroCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormOrcamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,11 +128,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCadastroCliente.resx">
+      <DependentUpon>FormCadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormClientes.resx">
       <DependentUpon>FormClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMateriaPrima.resx">
+      <DependentUpon>FormMateriaPrima.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
