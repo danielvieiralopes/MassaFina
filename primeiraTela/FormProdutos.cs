@@ -87,5 +87,15 @@ namespace primeiraTela
 
             new FormLogin().ShowDialog();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnAdicionar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

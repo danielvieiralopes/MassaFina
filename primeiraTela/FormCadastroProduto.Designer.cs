@@ -30,32 +30,32 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadastroProduto));
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.LoginButton = new System.Windows.Forms.Button();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnCancelarProduto = new System.Windows.Forms.Button();
+            this.btnCadastrarProduto = new System.Windows.Forms.Button();
+            this.inputMateriaCadastroProduto = new DevExpress.XtraEditors.TextEdit();
+            this.inputSetorCadastroProduto = new DevExpress.XtraEditors.TextEdit();
+            this.inputDepartamentoCadastroProduto = new DevExpress.XtraEditors.TextEdit();
+            this.inputMarcaCadastroProduto = new DevExpress.XtraEditors.TextEdit();
+            this.inputQtdeCadastroProduto = new DevExpress.XtraEditors.TextEdit();
+            this.inputDescricaoCadastroProduto = new DevExpress.XtraEditors.TextEdit();
+            this.btnImgProduto = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.inputValidadeCadastroProduto = new DevExpress.XtraEditors.TextEdit();
+            this.inputMedidaCadastroProduto = new DevExpress.XtraEditors.TextEdit();
+            this.inputMargemCadastroProduto = new DevExpress.XtraEditors.TextEdit();
+            this.inputVendaCadastroProduto = new DevExpress.XtraEditors.TextEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputMateriaCadastroProduto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputSetorCadastroProduto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputDepartamentoCadastroProduto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputMarcaCadastroProduto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputQtdeCadastroProduto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputDescricaoCadastroProduto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImgProduto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputValidadeCadastroProduto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputMedidaCadastroProduto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputMargemCadastroProduto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputVendaCadastroProduto.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -67,105 +67,105 @@
             this.label1.TabIndex = 21;
             this.label1.Text = "Adicione uma imagem";
             // 
-            // button1
+            // btnCancelarProduto
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(420, 379);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(168, 36);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Cancelar";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCancelarProduto.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnCancelarProduto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarProduto.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarProduto.Image")));
+            this.btnCancelarProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelarProduto.Location = new System.Drawing.Point(420, 379);
+            this.btnCancelarProduto.Name = "btnCancelarProduto";
+            this.btnCancelarProduto.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnCancelarProduto.Size = new System.Drawing.Size(168, 36);
+            this.btnCancelarProduto.TabIndex = 20;
+            this.btnCancelarProduto.Text = "Cancelar";
+            this.btnCancelarProduto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCancelarProduto.UseVisualStyleBackColor = false;
             // 
-            // LoginButton
+            // btnCadastrarProduto
             // 
-            this.LoginButton.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.LoginButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginButton.Image = ((System.Drawing.Image)(resources.GetObject("LoginButton.Image")));
-            this.LoginButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LoginButton.Location = new System.Drawing.Point(212, 379);
-            this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.LoginButton.Size = new System.Drawing.Size(168, 36);
-            this.LoginButton.TabIndex = 19;
-            this.LoginButton.Text = "Cadastrar";
-            this.LoginButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.LoginButton.UseVisualStyleBackColor = false;
+            this.btnCadastrarProduto.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnCadastrarProduto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrarProduto.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrarProduto.Image")));
+            this.btnCadastrarProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadastrarProduto.Location = new System.Drawing.Point(212, 379);
+            this.btnCadastrarProduto.Name = "btnCadastrarProduto";
+            this.btnCadastrarProduto.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnCadastrarProduto.Size = new System.Drawing.Size(168, 36);
+            this.btnCadastrarProduto.TabIndex = 19;
+            this.btnCadastrarProduto.Text = "Cadastrar";
+            this.btnCadastrarProduto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCadastrarProduto.UseVisualStyleBackColor = false;
             // 
-            // textEdit6
+            // inputMateriaCadastroProduto
             // 
-            this.textEdit6.EditValue = "Materia Prima";
-            this.textEdit6.Location = new System.Drawing.Point(124, 266);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit6.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit6.Size = new System.Drawing.Size(560, 20);
-            this.textEdit6.TabIndex = 18;
+            this.inputMateriaCadastroProduto.EditValue = "Materia Prima";
+            this.inputMateriaCadastroProduto.Location = new System.Drawing.Point(124, 266);
+            this.inputMateriaCadastroProduto.Name = "inputMateriaCadastroProduto";
+            this.inputMateriaCadastroProduto.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.inputMateriaCadastroProduto.Properties.Appearance.Options.UseForeColor = true;
+            this.inputMateriaCadastroProduto.Size = new System.Drawing.Size(560, 20);
+            this.inputMateriaCadastroProduto.TabIndex = 18;
             // 
-            // textEdit5
+            // inputSetorCadastroProduto
             // 
-            this.textEdit5.EditValue = "Setor";
-            this.textEdit5.Location = new System.Drawing.Point(514, 222);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit5.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit5.Size = new System.Drawing.Size(170, 20);
-            this.textEdit5.TabIndex = 17;
+            this.inputSetorCadastroProduto.EditValue = "Setor";
+            this.inputSetorCadastroProduto.Location = new System.Drawing.Point(514, 222);
+            this.inputSetorCadastroProduto.Name = "inputSetorCadastroProduto";
+            this.inputSetorCadastroProduto.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.inputSetorCadastroProduto.Properties.Appearance.Options.UseForeColor = true;
+            this.inputSetorCadastroProduto.Size = new System.Drawing.Size(170, 20);
+            this.inputSetorCadastroProduto.TabIndex = 17;
             // 
-            // textEdit4
+            // inputDepartamentoCadastroProduto
             // 
-            this.textEdit4.EditValue = "Departamento";
-            this.textEdit4.Location = new System.Drawing.Point(316, 222);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit4.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit4.Size = new System.Drawing.Size(156, 20);
-            this.textEdit4.TabIndex = 16;
+            this.inputDepartamentoCadastroProduto.EditValue = "Departamento";
+            this.inputDepartamentoCadastroProduto.Location = new System.Drawing.Point(316, 222);
+            this.inputDepartamentoCadastroProduto.Name = "inputDepartamentoCadastroProduto";
+            this.inputDepartamentoCadastroProduto.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.inputDepartamentoCadastroProduto.Properties.Appearance.Options.UseForeColor = true;
+            this.inputDepartamentoCadastroProduto.Size = new System.Drawing.Size(156, 20);
+            this.inputDepartamentoCadastroProduto.TabIndex = 16;
             // 
-            // textEdit3
+            // inputMarcaCadastroProduto
             // 
-            this.textEdit3.EditValue = "Marca";
-            this.textEdit3.Location = new System.Drawing.Point(124, 222);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit3.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit3.Size = new System.Drawing.Size(153, 20);
-            this.textEdit3.TabIndex = 15;
+            this.inputMarcaCadastroProduto.EditValue = "Marca";
+            this.inputMarcaCadastroProduto.Location = new System.Drawing.Point(124, 222);
+            this.inputMarcaCadastroProduto.Name = "inputMarcaCadastroProduto";
+            this.inputMarcaCadastroProduto.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.inputMarcaCadastroProduto.Properties.Appearance.Options.UseForeColor = true;
+            this.inputMarcaCadastroProduto.Size = new System.Drawing.Size(153, 20);
+            this.inputMarcaCadastroProduto.TabIndex = 15;
             // 
-            // textEdit2
+            // inputQtdeCadastroProduto
             // 
-            this.textEdit2.EditValue = "Quantidade";
-            this.textEdit2.Location = new System.Drawing.Point(124, 308);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit2.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit2.Size = new System.Drawing.Size(94, 20);
-            this.textEdit2.TabIndex = 14;
+            this.inputQtdeCadastroProduto.EditValue = "Quantidade";
+            this.inputQtdeCadastroProduto.Location = new System.Drawing.Point(124, 308);
+            this.inputQtdeCadastroProduto.Name = "inputQtdeCadastroProduto";
+            this.inputQtdeCadastroProduto.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.inputQtdeCadastroProduto.Properties.Appearance.Options.UseForeColor = true;
+            this.inputQtdeCadastroProduto.Size = new System.Drawing.Size(94, 20);
+            this.inputQtdeCadastroProduto.TabIndex = 14;
             // 
-            // textEdit1
+            // inputDescricaoCadastroProduto
             // 
-            this.textEdit1.EditValue = "Descrição do Produto";
-            this.textEdit1.Location = new System.Drawing.Point(124, 183);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit1.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit1.Size = new System.Drawing.Size(560, 20);
-            this.textEdit1.TabIndex = 13;
+            this.inputDescricaoCadastroProduto.EditValue = "Descrição do Produto";
+            this.inputDescricaoCadastroProduto.Location = new System.Drawing.Point(124, 183);
+            this.inputDescricaoCadastroProduto.Name = "inputDescricaoCadastroProduto";
+            this.inputDescricaoCadastroProduto.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.inputDescricaoCadastroProduto.Properties.Appearance.Options.UseForeColor = true;
+            this.inputDescricaoCadastroProduto.Size = new System.Drawing.Size(560, 20);
+            this.inputDescricaoCadastroProduto.TabIndex = 13;
             // 
-            // pictureBox2
+            // btnImgProduto
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(329, 20);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(145, 121);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
+            this.btnImgProduto.Image = ((System.Drawing.Image)(resources.GetObject("btnImgProduto.Image")));
+            this.btnImgProduto.Location = new System.Drawing.Point(329, 20);
+            this.btnImgProduto.Name = "btnImgProduto";
+            this.btnImgProduto.Size = new System.Drawing.Size(145, 121);
+            this.btnImgProduto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnImgProduto.TabIndex = 12;
+            this.btnImgProduto.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -177,82 +177,82 @@
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
-            // textEdit7
+            // inputValidadeCadastroProduto
             // 
-            this.textEdit7.EditValue = "Validade";
-            this.textEdit7.Location = new System.Drawing.Point(239, 308);
-            this.textEdit7.Name = "textEdit7";
-            this.textEdit7.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit7.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit7.Size = new System.Drawing.Size(94, 20);
-            this.textEdit7.TabIndex = 23;
+            this.inputValidadeCadastroProduto.EditValue = "Validade";
+            this.inputValidadeCadastroProduto.Location = new System.Drawing.Point(239, 308);
+            this.inputValidadeCadastroProduto.Name = "inputValidadeCadastroProduto";
+            this.inputValidadeCadastroProduto.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.inputValidadeCadastroProduto.Properties.Appearance.Options.UseForeColor = true;
+            this.inputValidadeCadastroProduto.Size = new System.Drawing.Size(94, 20);
+            this.inputValidadeCadastroProduto.TabIndex = 23;
             // 
-            // textEdit8
+            // inputMedidaCadastroProduto
             // 
-            this.textEdit8.EditValue = "Unidade de Medida";
-            this.textEdit8.Location = new System.Drawing.Point(354, 308);
-            this.textEdit8.Name = "textEdit8";
-            this.textEdit8.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit8.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit8.Size = new System.Drawing.Size(107, 20);
-            this.textEdit8.TabIndex = 24;
+            this.inputMedidaCadastroProduto.EditValue = "Unidade de Medida";
+            this.inputMedidaCadastroProduto.Location = new System.Drawing.Point(354, 308);
+            this.inputMedidaCadastroProduto.Name = "inputMedidaCadastroProduto";
+            this.inputMedidaCadastroProduto.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.inputMedidaCadastroProduto.Properties.Appearance.Options.UseForeColor = true;
+            this.inputMedidaCadastroProduto.Size = new System.Drawing.Size(107, 20);
+            this.inputMedidaCadastroProduto.TabIndex = 24;
             // 
-            // textEdit9
+            // inputMargemCadastroProduto
             // 
-            this.textEdit9.EditValue = "Margem";
-            this.textEdit9.Location = new System.Drawing.Point(488, 308);
-            this.textEdit9.Name = "textEdit9";
-            this.textEdit9.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit9.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit9.Size = new System.Drawing.Size(84, 20);
-            this.textEdit9.TabIndex = 25;
+            this.inputMargemCadastroProduto.EditValue = "Margem";
+            this.inputMargemCadastroProduto.Location = new System.Drawing.Point(488, 308);
+            this.inputMargemCadastroProduto.Name = "inputMargemCadastroProduto";
+            this.inputMargemCadastroProduto.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.inputMargemCadastroProduto.Properties.Appearance.Options.UseForeColor = true;
+            this.inputMargemCadastroProduto.Size = new System.Drawing.Size(84, 20);
+            this.inputMargemCadastroProduto.TabIndex = 25;
             // 
-            // textEdit10
+            // inputVendaCadastroProduto
             // 
-            this.textEdit10.EditValue = "Venda";
-            this.textEdit10.Location = new System.Drawing.Point(590, 308);
-            this.textEdit10.Name = "textEdit10";
-            this.textEdit10.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit10.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit10.Size = new System.Drawing.Size(94, 20);
-            this.textEdit10.TabIndex = 26;
+            this.inputVendaCadastroProduto.EditValue = "Venda";
+            this.inputVendaCadastroProduto.Location = new System.Drawing.Point(590, 308);
+            this.inputVendaCadastroProduto.Name = "inputVendaCadastroProduto";
+            this.inputVendaCadastroProduto.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.inputVendaCadastroProduto.Properties.Appearance.Options.UseForeColor = true;
+            this.inputVendaCadastroProduto.Size = new System.Drawing.Size(94, 20);
+            this.inputVendaCadastroProduto.TabIndex = 26;
             // 
             // FormCadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textEdit10);
-            this.Controls.Add(this.textEdit9);
-            this.Controls.Add(this.textEdit8);
-            this.Controls.Add(this.textEdit7);
+            this.Controls.Add(this.inputVendaCadastroProduto);
+            this.Controls.Add(this.inputMargemCadastroProduto);
+            this.Controls.Add(this.inputMedidaCadastroProduto);
+            this.Controls.Add(this.inputValidadeCadastroProduto);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.LoginButton);
-            this.Controls.Add(this.textEdit6);
-            this.Controls.Add(this.textEdit5);
-            this.Controls.Add(this.textEdit4);
-            this.Controls.Add(this.textEdit3);
-            this.Controls.Add(this.textEdit2);
-            this.Controls.Add(this.textEdit1);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.btnCancelarProduto);
+            this.Controls.Add(this.btnCadastrarProduto);
+            this.Controls.Add(this.inputMateriaCadastroProduto);
+            this.Controls.Add(this.inputSetorCadastroProduto);
+            this.Controls.Add(this.inputDepartamentoCadastroProduto);
+            this.Controls.Add(this.inputMarcaCadastroProduto);
+            this.Controls.Add(this.inputQtdeCadastroProduto);
+            this.Controls.Add(this.inputDescricaoCadastroProduto);
+            this.Controls.Add(this.btnImgProduto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCadastroProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputMateriaCadastroProduto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputSetorCadastroProduto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputDepartamentoCadastroProduto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputMarcaCadastroProduto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputQtdeCadastroProduto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputDescricaoCadastroProduto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImgProduto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputValidadeCadastroProduto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputMedidaCadastroProduto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputMargemCadastroProduto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputVendaCadastroProduto.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,19 +261,19 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button LoginButton;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnCancelarProduto;
+        private System.Windows.Forms.Button btnCadastrarProduto;
+        private DevExpress.XtraEditors.TextEdit inputMateriaCadastroProduto;
+        private DevExpress.XtraEditors.TextEdit inputSetorCadastroProduto;
+        private DevExpress.XtraEditors.TextEdit inputDepartamentoCadastroProduto;
+        private DevExpress.XtraEditors.TextEdit inputMarcaCadastroProduto;
+        private DevExpress.XtraEditors.TextEdit inputQtdeCadastroProduto;
+        private DevExpress.XtraEditors.TextEdit inputDescricaoCadastroProduto;
+        private System.Windows.Forms.PictureBox btnImgProduto;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private DevExpress.XtraEditors.TextEdit textEdit7;
-        private DevExpress.XtraEditors.TextEdit textEdit8;
-        private DevExpress.XtraEditors.TextEdit textEdit9;
-        private DevExpress.XtraEditors.TextEdit textEdit10;
+        private DevExpress.XtraEditors.TextEdit inputValidadeCadastroProduto;
+        private DevExpress.XtraEditors.TextEdit inputMedidaCadastroProduto;
+        private DevExpress.XtraEditors.TextEdit inputMargemCadastroProduto;
+        private DevExpress.XtraEditors.TextEdit inputVendaCadastroProduto;
     }
 }

@@ -29,124 +29,124 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadastroCliente));
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
-            this.LoginButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnImgCliente = new System.Windows.Forms.PictureBox();
+            this.inputNomeCadastroCliente = new DevExpress.XtraEditors.TextEdit();
+            this.inputCpfCadastroCliente = new DevExpress.XtraEditors.TextEdit();
+            this.inputTelefoneCadastroCliente = new DevExpress.XtraEditors.TextEdit();
+            this.inputNascimentoCadastroCliente = new DevExpress.XtraEditors.TextEdit();
+            this.inputSituacaoCadastroCliente = new DevExpress.XtraEditors.TextEdit();
+            this.inputEnderecoCadastroCliente = new DevExpress.XtraEditors.TextEdit();
+            this.btnCadastrarCliente = new System.Windows.Forms.Button();
+            this.btnCancelarCliente = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImgCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputNomeCadastroCliente.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputCpfCadastroCliente.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputTelefoneCadastroCliente.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputNascimentoCadastroCliente.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputSituacaoCadastroCliente.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputEnderecoCadastroCliente.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox2
+            // btnImgCliente
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(316, 18);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(132, 111);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
+            this.btnImgCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnImgCliente.Image")));
+            this.btnImgCliente.Location = new System.Drawing.Point(316, 18);
+            this.btnImgCliente.Name = "btnImgCliente";
+            this.btnImgCliente.Size = new System.Drawing.Size(132, 111);
+            this.btnImgCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnImgCliente.TabIndex = 2;
+            this.btnImgCliente.TabStop = false;
             // 
-            // textEdit1
+            // inputNomeCadastroCliente
             // 
-            this.textEdit1.EditValue = "Nome";
-            this.textEdit1.Location = new System.Drawing.Point(100, 199);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit1.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit1.Size = new System.Drawing.Size(284, 20);
-            this.textEdit1.TabIndex = 3;
+            this.inputNomeCadastroCliente.EditValue = "Nome";
+            this.inputNomeCadastroCliente.Location = new System.Drawing.Point(100, 199);
+            this.inputNomeCadastroCliente.Name = "inputNomeCadastroCliente";
+            this.inputNomeCadastroCliente.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.inputNomeCadastroCliente.Properties.Appearance.Options.UseForeColor = true;
+            this.inputNomeCadastroCliente.Size = new System.Drawing.Size(284, 20);
+            this.inputNomeCadastroCliente.TabIndex = 3;
             // 
-            // textEdit2
+            // inputCpfCadastroCliente
             // 
-            this.textEdit2.EditValue = "CPF";
-            this.textEdit2.Location = new System.Drawing.Point(412, 199);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit2.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit2.Size = new System.Drawing.Size(248, 20);
-            this.textEdit2.TabIndex = 4;
+            this.inputCpfCadastroCliente.EditValue = "CPF";
+            this.inputCpfCadastroCliente.Location = new System.Drawing.Point(412, 199);
+            this.inputCpfCadastroCliente.Name = "inputCpfCadastroCliente";
+            this.inputCpfCadastroCliente.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.inputCpfCadastroCliente.Properties.Appearance.Options.UseForeColor = true;
+            this.inputCpfCadastroCliente.Size = new System.Drawing.Size(248, 20);
+            this.inputCpfCadastroCliente.TabIndex = 4;
             // 
-            // textEdit3
+            // inputTelefoneCadastroCliente
             // 
-            this.textEdit3.EditValue = "Telefone";
-            this.textEdit3.Location = new System.Drawing.Point(100, 238);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit3.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit3.Size = new System.Drawing.Size(153, 20);
-            this.textEdit3.TabIndex = 5;
+            this.inputTelefoneCadastroCliente.EditValue = "Telefone";
+            this.inputTelefoneCadastroCliente.Location = new System.Drawing.Point(100, 238);
+            this.inputTelefoneCadastroCliente.Name = "inputTelefoneCadastroCliente";
+            this.inputTelefoneCadastroCliente.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.inputTelefoneCadastroCliente.Properties.Appearance.Options.UseForeColor = true;
+            this.inputTelefoneCadastroCliente.Size = new System.Drawing.Size(153, 20);
+            this.inputTelefoneCadastroCliente.TabIndex = 5;
             // 
-            // textEdit4
+            // inputNascimentoCadastroCliente
             // 
-            this.textEdit4.EditValue = "Nascimento";
-            this.textEdit4.Location = new System.Drawing.Point(292, 238);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit4.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit4.Size = new System.Drawing.Size(156, 20);
-            this.textEdit4.TabIndex = 6;
+            this.inputNascimentoCadastroCliente.EditValue = "Nascimento";
+            this.inputNascimentoCadastroCliente.Location = new System.Drawing.Point(292, 238);
+            this.inputNascimentoCadastroCliente.Name = "inputNascimentoCadastroCliente";
+            this.inputNascimentoCadastroCliente.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.inputNascimentoCadastroCliente.Properties.Appearance.Options.UseForeColor = true;
+            this.inputNascimentoCadastroCliente.Size = new System.Drawing.Size(156, 20);
+            this.inputNascimentoCadastroCliente.TabIndex = 6;
             // 
-            // textEdit5
+            // inputSituacaoCadastroCliente
             // 
-            this.textEdit5.EditValue = "Situação";
-            this.textEdit5.Location = new System.Drawing.Point(490, 238);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit5.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit5.Size = new System.Drawing.Size(170, 20);
-            this.textEdit5.TabIndex = 7;
+            this.inputSituacaoCadastroCliente.EditValue = "Situação";
+            this.inputSituacaoCadastroCliente.Location = new System.Drawing.Point(490, 238);
+            this.inputSituacaoCadastroCliente.Name = "inputSituacaoCadastroCliente";
+            this.inputSituacaoCadastroCliente.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.inputSituacaoCadastroCliente.Properties.Appearance.Options.UseForeColor = true;
+            this.inputSituacaoCadastroCliente.Size = new System.Drawing.Size(170, 20);
+            this.inputSituacaoCadastroCliente.TabIndex = 7;
             // 
-            // textEdit6
+            // inputEnderecoCadastroCliente
             // 
-            this.textEdit6.EditValue = "Endereço";
-            this.textEdit6.Location = new System.Drawing.Point(100, 282);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit6.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit6.Size = new System.Drawing.Size(560, 20);
-            this.textEdit6.TabIndex = 8;
+            this.inputEnderecoCadastroCliente.EditValue = "Endereço";
+            this.inputEnderecoCadastroCliente.Location = new System.Drawing.Point(100, 282);
+            this.inputEnderecoCadastroCliente.Name = "inputEnderecoCadastroCliente";
+            this.inputEnderecoCadastroCliente.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.inputEnderecoCadastroCliente.Properties.Appearance.Options.UseForeColor = true;
+            this.inputEnderecoCadastroCliente.Size = new System.Drawing.Size(560, 20);
+            this.inputEnderecoCadastroCliente.TabIndex = 8;
             // 
-            // LoginButton
+            // btnCadastrarCliente
             // 
-            this.LoginButton.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.LoginButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginButton.Image = ((System.Drawing.Image)(resources.GetObject("LoginButton.Image")));
-            this.LoginButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LoginButton.Location = new System.Drawing.Point(204, 367);
-            this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.LoginButton.Size = new System.Drawing.Size(168, 36);
-            this.LoginButton.TabIndex = 9;
-            this.LoginButton.Text = "Cadastrar";
-            this.LoginButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.LoginButton.UseVisualStyleBackColor = false;
+            this.btnCadastrarCliente.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnCadastrarCliente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrarCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrarCliente.Image")));
+            this.btnCadastrarCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadastrarCliente.Location = new System.Drawing.Point(204, 367);
+            this.btnCadastrarCliente.Name = "btnCadastrarCliente";
+            this.btnCadastrarCliente.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnCadastrarCliente.Size = new System.Drawing.Size(168, 36);
+            this.btnCadastrarCliente.TabIndex = 9;
+            this.btnCadastrarCliente.Text = "Cadastrar";
+            this.btnCadastrarCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCadastrarCliente.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnCancelarCliente
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(412, 367);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(168, 36);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Cancelar";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCancelarCliente.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnCancelarCliente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarCliente.Image")));
+            this.btnCancelarCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelarCliente.Location = new System.Drawing.Point(412, 367);
+            this.btnCancelarCliente.Name = "btnCancelarCliente";
+            this.btnCancelarCliente.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnCancelarCliente.Size = new System.Drawing.Size(168, 36);
+            this.btnCancelarCliente.TabIndex = 10;
+            this.btnCancelarCliente.Text = "Cancelar";
+            this.btnCancelarCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCancelarCliente.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -164,41 +164,41 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.LoginButton);
-            this.Controls.Add(this.textEdit6);
-            this.Controls.Add(this.textEdit5);
-            this.Controls.Add(this.textEdit4);
-            this.Controls.Add(this.textEdit3);
-            this.Controls.Add(this.textEdit2);
-            this.Controls.Add(this.textEdit1);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.btnCancelarCliente);
+            this.Controls.Add(this.btnCadastrarCliente);
+            this.Controls.Add(this.inputEnderecoCadastroCliente);
+            this.Controls.Add(this.inputSituacaoCadastroCliente);
+            this.Controls.Add(this.inputNascimentoCadastroCliente);
+            this.Controls.Add(this.inputTelefoneCadastroCliente);
+            this.Controls.Add(this.inputCpfCadastroCliente);
+            this.Controls.Add(this.inputNomeCadastroCliente);
+            this.Controls.Add(this.btnImgCliente);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCadastroCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImgCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputNomeCadastroCliente.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputCpfCadastroCliente.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputTelefoneCadastroCliente.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputNascimentoCadastroCliente.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputSituacaoCadastroCliente.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputEnderecoCadastroCliente.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
-        private System.Windows.Forms.Button LoginButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox btnImgCliente;
+        private DevExpress.XtraEditors.TextEdit inputNomeCadastroCliente;
+        private DevExpress.XtraEditors.TextEdit inputCpfCadastroCliente;
+        private DevExpress.XtraEditors.TextEdit inputTelefoneCadastroCliente;
+        private DevExpress.XtraEditors.TextEdit inputNascimentoCadastroCliente;
+        private DevExpress.XtraEditors.TextEdit inputSituacaoCadastroCliente;
+        private DevExpress.XtraEditors.TextEdit inputEnderecoCadastroCliente;
+        private System.Windows.Forms.Button btnCadastrarCliente;
+        private System.Windows.Forms.Button btnCancelarCliente;
         private System.Windows.Forms.Label label1;
     }
 }

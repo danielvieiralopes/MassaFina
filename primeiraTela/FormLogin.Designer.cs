@@ -30,15 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.UserInput = new System.Windows.Forms.TextBox();
-            this.LoginButton = new System.Windows.Forms.Button();
+            this.inputUsuario = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.inputSenha = new System.Windows.Forms.TextBox();
+            this.btnTrocarSenha = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -55,31 +54,31 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // UserInput
+            // inputUsuario
             // 
-            this.UserInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UserInput.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserInput.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.UserInput.Location = new System.Drawing.Point(102, 159);
-            this.UserInput.Name = "UserInput";
-            this.UserInput.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.UserInput.Size = new System.Drawing.Size(169, 19);
-            this.UserInput.TabIndex = 3;
-            this.UserInput.Text = "Usuário";
+            this.inputUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputUsuario.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputUsuario.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.inputUsuario.Location = new System.Drawing.Point(102, 159);
+            this.inputUsuario.Name = "inputUsuario";
+            this.inputUsuario.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.inputUsuario.Size = new System.Drawing.Size(169, 19);
+            this.inputUsuario.TabIndex = 3;
+            this.inputUsuario.Text = "Usuário";
             // 
-            // LoginButton
+            // btnLogin
             // 
-            this.LoginButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.LoginButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginButton.Image = ((System.Drawing.Image)(resources.GetObject("LoginButton.Image")));
-            this.LoginButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LoginButton.Location = new System.Drawing.Point(69, 248);
-            this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(196, 36);
-            this.LoginButton.TabIndex = 5;
-            this.LoginButton.Text = "LOGIN";
-            this.LoginButton.UseVisualStyleBackColor = false;
-            this.LoginButton.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Image = ((System.Drawing.Image)(resources.GetObject("btnLogin.Image")));
+            this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogin.Location = new System.Drawing.Point(69, 248);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(196, 36);
+            this.btnLogin.TabIndex = 5;
+            this.btnLogin.Text = "LOGIN";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox2
             // 
@@ -124,54 +123,43 @@
             this.panel2.Size = new System.Drawing.Size(185, 1);
             this.panel2.TabIndex = 10;
             // 
-            // textBox1
+            // inputSenha
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox1.Location = new System.Drawing.Point(102, 195);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox1.Size = new System.Drawing.Size(169, 19);
-            this.textBox1.TabIndex = 8;
-            this.textBox1.Text = "Senha";
+            this.inputSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputSenha.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputSenha.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.inputSenha.Location = new System.Drawing.Point(102, 195);
+            this.inputSenha.Name = "inputSenha";
+            this.inputSenha.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.inputSenha.Size = new System.Drawing.Size(169, 19);
+            this.inputSenha.TabIndex = 8;
+            this.inputSenha.Text = "Senha";
             // 
-            // textBox2
+            // btnTrocarSenha
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox2.Location = new System.Drawing.Point(170, 290);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox2.Size = new System.Drawing.Size(95, 14);
-            this.textBox2.TabIndex = 12;
-            this.textBox2.Text = "Esqueci a senha";
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("simpleButton1.BackgroundImage")));
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(300, 0);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(43, 40);
-            this.simpleButton1.TabIndex = 13;
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.btnTrocarSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.btnTrocarSenha.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrocarSenha.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnTrocarSenha.Location = new System.Drawing.Point(170, 290);
+            this.btnTrocarSenha.Name = "btnTrocarSenha";
+            this.btnTrocarSenha.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnTrocarSenha.Size = new System.Drawing.Size(95, 14);
+            this.btnTrocarSenha.TabIndex = 12;
+            this.btnTrocarSenha.Text = "Esqueci a senha";
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(338, 345);
-            this.Controls.Add(this.simpleButton1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btnTrocarSenha);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.inputSenha);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.LoginButton);
-            this.Controls.Add(this.UserInput);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.inputUsuario);
             this.Controls.Add(this.pictureBox1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -191,14 +179,13 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox UserInput;
-        private System.Windows.Forms.Button LoginButton;
+        private System.Windows.Forms.TextBox inputUsuario;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private System.Windows.Forms.TextBox inputSenha;
+        private System.Windows.Forms.TextBox btnTrocarSenha;
     }
 }

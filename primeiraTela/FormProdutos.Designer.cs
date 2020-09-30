@@ -32,21 +32,23 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.gridProdutos = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colunaCodProduto = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colunaProduto = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colunaQtdeProduto = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colunaPesoProduto = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colunaPrecoProduto = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.inputPesquisaProduto = new System.Windows.Forms.TextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnExcluir = new System.Windows.Forms.ToolStripButton();
             this.btnEditar = new System.Windows.Forms.ToolStripButton();
-            this.btnAdicionar = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.btnCadastrar = new System.Windows.Forms.ToolStripButton();
+            this.btnMateria = new System.Windows.Forms.ToolStripButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -56,25 +58,23 @@
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.UserInput = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridProdutos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             this.panel3.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(85, 67);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -85,14 +85,15 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(103, 47);
+            this.panel1.Location = new System.Drawing.Point(121, 45);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(453, 1);
             this.panel1.TabIndex = 12;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.gridControl2);
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.gridProdutos);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -100,72 +101,73 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(706, 482);
             this.panel2.TabIndex = 15;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // gridControl2
+            // gridProdutos
             // 
-            this.gridControl2.Location = new System.Drawing.Point(0, 91);
-            this.gridControl2.MainView = this.gridView2;
-            this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(706, 287);
-            this.gridControl2.TabIndex = 19;
-            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridProdutos.Location = new System.Drawing.Point(0, 91);
+            this.gridProdutos.MainView = this.gridView2;
+            this.gridProdutos.Name = "gridProdutos";
+            this.gridProdutos.Size = new System.Drawing.Size(706, 287);
+            this.gridProdutos.TabIndex = 19;
+            this.gridProdutos.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
-            this.gridControl2.Click += new System.EventHandler(this.gridControl2_Click);
+            this.gridProdutos.Click += new System.EventHandler(this.gridControl2_Click);
             // 
             // gridView2
             // 
             this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8,
-            this.gridColumn9,
-            this.gridColumn10});
-            this.gridView2.GridControl = this.gridControl2;
+            this.colunaCodProduto,
+            this.colunaProduto,
+            this.colunaQtdeProduto,
+            this.colunaPesoProduto,
+            this.colunaPrecoProduto});
+            this.gridView2.GridControl = this.gridProdutos;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsCustomization.AllowGroup = false;
             this.gridView2.OptionsView.ShowGroupPanel = false;
             // 
-            // gridColumn6
+            // colunaCodProduto
             // 
-            this.gridColumn6.FieldName = "Código";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 0;
+            this.colunaCodProduto.FieldName = "Código";
+            this.colunaCodProduto.Name = "colunaCodProduto";
+            this.colunaCodProduto.Visible = true;
+            this.colunaCodProduto.VisibleIndex = 0;
             // 
-            // gridColumn7
+            // colunaProduto
             // 
-            this.gridColumn7.FieldName = "Produto";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 1;
+            this.colunaProduto.FieldName = "Produto";
+            this.colunaProduto.Name = "colunaProduto";
+            this.colunaProduto.Visible = true;
+            this.colunaProduto.VisibleIndex = 1;
             // 
-            // gridColumn8
+            // colunaQtdeProduto
             // 
-            this.gridColumn8.FieldName = "Quantidade";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 2;
+            this.colunaQtdeProduto.FieldName = "Quantidade";
+            this.colunaQtdeProduto.Name = "colunaQtdeProduto";
+            this.colunaQtdeProduto.Visible = true;
+            this.colunaQtdeProduto.VisibleIndex = 2;
             // 
-            // gridColumn9
+            // colunaPesoProduto
             // 
-            this.gridColumn9.FieldName = "Peso";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 3;
+            this.colunaPesoProduto.FieldName = "Peso";
+            this.colunaPesoProduto.Name = "colunaPesoProduto";
+            this.colunaPesoProduto.Visible = true;
+            this.colunaPesoProduto.VisibleIndex = 3;
             // 
-            // gridColumn10
+            // colunaPrecoProduto
             // 
-            this.gridColumn10.FieldName = "Preço";
-            this.gridColumn10.Name = "gridColumn10";
-            this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 4;
+            this.colunaPrecoProduto.FieldName = "Preço";
+            this.colunaPrecoProduto.Name = "colunaPrecoProduto";
+            this.colunaPrecoProduto.Visible = true;
+            this.colunaPrecoProduto.VisibleIndex = 4;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.btnSair);
+            this.panel3.Controls.Add(this.btnMenu);
             this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Controls.Add(this.UserInput);
+            this.panel3.Controls.Add(this.inputPesquisaProduto);
             this.panel3.Controls.Add(this.toolStrip1);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.panel1);
@@ -176,29 +178,45 @@
             this.panel3.TabIndex = 17;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // button1
+            // btnSair
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(666, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(28, 27);
-            this.button1.TabIndex = 16;
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            this.btnSair.BackColor = System.Drawing.Color.Transparent;
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
+            this.btnSair.Location = new System.Drawing.Point(666, 12);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(28, 27);
+            this.btnSair.TabIndex = 16;
+            this.btnSair.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.button1_Click_2);
             // 
-            // button2
+            // btnMenu
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(630, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(30, 27);
-            this.button2.TabIndex = 15;
-            this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.btnMenu.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
+            this.btnMenu.Location = new System.Drawing.Point(630, 12);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(30, 27);
+            this.btnMenu.TabIndex = 15;
+            this.btnMenu.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // inputPesquisaProduto
+            // 
+            this.inputPesquisaProduto.BackColor = System.Drawing.Color.White;
+            this.inputPesquisaProduto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputPesquisaProduto.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputPesquisaProduto.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.inputPesquisaProduto.Location = new System.Drawing.Point(121, 20);
+            this.inputPesquisaProduto.Name = "inputPesquisaProduto";
+            this.inputPesquisaProduto.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.inputPesquisaProduto.Size = new System.Drawing.Size(428, 19);
+            this.inputPesquisaProduto.TabIndex = 10;
+            this.inputPesquisaProduto.Text = "Pesquisar produto";
+            this.inputPesquisaProduto.TextChanged += new System.EventHandler(this.UserInput_TextChanged);
             // 
             // toolStrip1
             // 
@@ -208,8 +226,8 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnExcluir,
             this.btnEditar,
-            this.btnAdicionar,
-            this.toolStripButton1});
+            this.btnCadastrar,
+            this.btnMateria});
             this.toolStrip1.Location = new System.Drawing.Point(0, 60);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
@@ -221,6 +239,8 @@
             // btnExcluir
             // 
             this.btnExcluir.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnExcluir.BackColor = System.Drawing.Color.Transparent;
+            this.btnExcluir.ForeColor = System.Drawing.Color.Black;
             this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.btnExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnExcluir.Name = "btnExcluir";
@@ -230,30 +250,52 @@
             // btnEditar
             // 
             this.btnEditar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnEditar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditar.ForeColor = System.Drawing.Color.Black;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(58, 22);
             this.btnEditar.Text = "Editar";
             // 
-            // btnAdicionar
+            // btnCadastrar
             // 
-            this.btnAdicionar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnAdicionar.Image = ((System.Drawing.Image)(resources.GetObject("btnAdicionar.Image")));
-            this.btnAdicionar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(77, 22);
-            this.btnAdicionar.Text = "Cadastrar";
+            this.btnCadastrar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCadastrar.ForeColor = System.Drawing.Color.Black;
+            this.btnCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.Image")));
+            this.btnCadastrar.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(77, 22);
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
-            // toolStripButton1
+            // btnMateria
             // 
-            this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(99, 22);
-            this.toolStripButton1.Text = "Matéria Prima";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            this.btnMateria.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnMateria.BackColor = System.Drawing.Color.Transparent;
+            this.btnMateria.ForeColor = System.Drawing.Color.Black;
+            this.btnMateria.Image = ((System.Drawing.Image)(resources.GetObject("btnMateria.Image")));
+            this.btnMateria.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnMateria.Name = "btnMateria";
+            this.btnMateria.Size = new System.Drawing.Size(99, 22);
+            this.btnMateria.Text = "Matéria Prima";
+            this.btnMateria.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.ImageLocation = "";
+            this.pictureBox2.Location = new System.Drawing.Point(555, 20);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(28, 23);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // panel4
             // 
@@ -308,34 +350,6 @@
             // 
             this.gridColumn5.Name = "gridColumn5";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.ImageLocation = "";
-            this.pictureBox2.Location = new System.Drawing.Point(537, 22);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(28, 23);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 11;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // UserInput
-            // 
-            this.UserInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UserInput.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserInput.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.UserInput.Location = new System.Drawing.Point(103, 22);
-            this.UserInput.Name = "UserInput";
-            this.UserInput.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.UserInput.Size = new System.Drawing.Size(428, 19);
-            this.UserInput.TabIndex = 10;
-            this.UserInput.Text = "Pesquisar produto";
-            this.UserInput.TextChanged += new System.EventHandler(this.UserInput_TextChanged);
-            // 
             // FormProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -351,17 +365,17 @@
             this.Load += new System.EventHandler(this.Produtos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridProdutos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -377,25 +391,25 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnExcluir;
         private System.Windows.Forms.ToolStripButton btnEditar;
-        private System.Windows.Forms.ToolStripButton btnAdicionar;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton btnCadastrar;
+        private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.ToolStripButton btnMateria;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.GridControl gridControl2;
+        private DevExpress.XtraGrid.GridControl gridProdutos;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private DevExpress.XtraGrid.Columns.GridColumn colunaCodProduto;
+        private DevExpress.XtraGrid.Columns.GridColumn colunaProduto;
+        private DevExpress.XtraGrid.Columns.GridColumn colunaQtdeProduto;
+        private DevExpress.XtraGrid.Columns.GridColumn colunaPesoProduto;
+        private DevExpress.XtraGrid.Columns.GridColumn colunaPrecoProduto;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private System.Windows.Forms.TextBox UserInput;
+        private System.Windows.Forms.TextBox inputPesquisaProduto;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
