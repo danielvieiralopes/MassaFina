@@ -69,7 +69,7 @@
             // 
             this.panelControl2.Controls.Add(this.pictureBox3);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl2.Location = new System.Drawing.Point(0, 354);
+            this.panelControl2.Location = new System.Drawing.Point(0, 504);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(800, 96);
             this.panelControl2.TabIndex = 23;
@@ -115,7 +115,7 @@
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl3.Location = new System.Drawing.Point(0, 100);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(800, 350);
+            this.panelControl3.Size = new System.Drawing.Size(800, 500);
             this.panelControl3.TabIndex = 24;
             // 
             // gridMateria
@@ -124,7 +124,7 @@
             this.gridMateria.Location = new System.Drawing.Point(2, 2);
             this.gridMateria.MainView = this.gridView2;
             this.gridMateria.Name = "gridMateria";
-            this.gridMateria.Size = new System.Drawing.Size(796, 346);
+            this.gridMateria.Size = new System.Drawing.Size(796, 496);
             this.gridMateria.TabIndex = 20;
             this.gridMateria.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -286,7 +286,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl1);
@@ -294,6 +294,7 @@
             this.Name = "FormMateriaPrima";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

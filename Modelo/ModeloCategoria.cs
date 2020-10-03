@@ -14,12 +14,14 @@ namespace Modelo
             get { return this.cat_cod; }
             set { this.cat_cod = value; }
         }
+      
         private String cat_nome;
-        
         public String CatNome
         {
             get { return this.cat_nome; }
             set { this.cat_nome = value; }
         }
+        public int id { get; set; }
+        public int MyProperty { get; set; }
     }
 }

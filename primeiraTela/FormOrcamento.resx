@@ -172,6 +172,20 @@
         ggTR41kJAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="btnPesquisarOrcamento.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        sQAAALEBxi1JjQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGlSURBVEhLrZW7
+        LkVREIa3S+JSCfEAiF5BoSQegBcg0XAaKlHoVCgUIhqXSqVQ4QX0KKmIkEiIEonr9xeTLOusvfda7D/5
+        mjkza9aeWTMny1EHzMAx3MAbPMIFrMMw/EkNMAdP8F3CCfRDtNrgAEKH5fEMY1Aq3dw//BJq0Act0AWj
+        sAPvYH4vMAiFUlncw1ehGfI0ANdg/rfQDkGpoW7N1yBGPaDGW9wSBDUL5nQFRTf3NQUWew8qdZ30FM1J
+        NU9REzyAxQd74dZSDU3VPli8vqhOr2AOrTIkagUsflEGX26DO2VI1CZY/LwMvjT+5jAiQ6JOweLHZfCl
+        3WIOGqIU9cIHKPYTuqFOWlyWQBOqIYrVIVjskQx50uIyR70qDVGZlsFivqBww2oranFZgCZUT64RfCm5
+        e3NxBiHfX9JW1OJyAzVEeudaHxughlrNfXahNIkmUYsrdICPynLu2aKSaCtqcd2BG2zotaihqrkO06Hu
+        71FJJC2uIZiEBdAQTYD/FP+VJFa6zBa4Sfag0iShL9mGSuV+iR6B/msql75EN5/Osiz7AU7AtLouYxfl
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAABGdBTUEAALGPC/xhBQAACy1JREFUeF7t
@@ -223,17 +237,6 @@
         YR8gA15mbtzeP93hI9Rk4NGx1TGOh7seY77UEqvNbh0/Maon7t2yTdxGyiYcSx3TeHgBRkbqjDr2sywA
         AAAAAAAAQHuG+IoIr9JAcZh0ANDLiYCTCwAAAADAcXAtDQBXMuUTBSdBKAaTDR7BRDgOvAE4oSzQC0ws
         qMJUJh4FgqNh8gAAAMwBVnw4CiYOAABALViFAebMtWv/BYke7+JZj4BbAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        dgAAAHYBTnsmCAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADtSURBVDhPnZNL
-        rgFBFEANhBWQGD9mFiAeS3vCHogdYBUWweAtAAMLQBjgHFGJ1pXyOclJt76fqrrdCk90cYYbPOIap/iL
-        SYo4xkvCIZoXJRTv8A9/sHS/9nCPoUkOtx2KWz6I0MbQJHccz2zAlVP00bzJ7dcDDsyA201RR/McbAan
-        bcAzpyijeeZneHcHDTTP/Ay+ZwNOO8UAzTM/QwcNOGWnHcPJH/B8v88xwtDEaTswZ+LVlS02vsUq5vAL
-        C01iurLF3i8x2kTcnu95hSd0YOG/YJHFL5ukqOACbfKPNfyYx53MffANNqG40LwC8O5Qa0NjEtgAAAAA
-        SUVORK5CYII=
 </value>
   </data>
 </root>

@@ -138,7 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.inputObsCadastroOrcamento);
             this.Controls.Add(this.btnCancelarOrcamento);
             this.Controls.Add(this.btnCadastrarOrcamento);
@@ -151,6 +151,7 @@
             this.Name = "FormCadastroOrçamento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.inputPrevisaoCadastroOrcamento.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputValorCadastroOrcamento.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputProdutoCadastroOrcamento.Properties)).EndInit();

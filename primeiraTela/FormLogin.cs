@@ -13,19 +13,16 @@ namespace primeiraTela
 {
     public partial class FormLogin : System.Windows.Forms.Form
     {
+        #region[Construtor]
         public FormLogin()
         {
             InitializeComponent();
         }
-
+        #endregion
+        public void acessoLogin() { }
         private void Login_Load(object sender, EventArgs e)
         {
             
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -41,6 +38,11 @@ namespace primeiraTela
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

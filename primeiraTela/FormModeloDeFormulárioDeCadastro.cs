@@ -7,20 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Common;
 
 namespace primeiraTela
 {
-    public partial class FormCadastroProduto : Form
+    public partial class FormModeloDeFormularioDeCadastro : Form
     {
-        public FormCadastroProduto()
+        public FormModeloDeFormularioDeCadastro()
         {
             InitializeComponent();
-        }
-
-        private void btnCadastrarProduto_Click(object sender, EventArgs e)
-        {
-            //MessageBox.Show();
         }
     }
 }

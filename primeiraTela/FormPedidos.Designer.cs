@@ -120,7 +120,7 @@
             this.gridPedido.Location = new System.Drawing.Point(2, 2);
             this.gridPedido.MainView = this.gridView2;
             this.gridPedido.Name = "gridPedido";
-            this.gridPedido.Size = new System.Drawing.Size(796, 250);
+            this.gridPedido.Size = new System.Drawing.Size(796, 400);
             this.gridPedido.TabIndex = 20;
             this.gridPedido.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -131,7 +131,7 @@
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl3.Location = new System.Drawing.Point(0, 100);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(800, 254);
+            this.panelControl3.Size = new System.Drawing.Size(800, 404);
             this.panelControl3.TabIndex = 21;
             // 
             // panelControl1
@@ -284,7 +284,7 @@
             // 
             this.panelControl2.Controls.Add(this.pictureBox3);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl2.Location = new System.Drawing.Point(0, 354);
+            this.panelControl2.Location = new System.Drawing.Point(0, 504);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(800, 96);
             this.panelControl2.TabIndex = 20;
@@ -293,13 +293,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.panelControl2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormPedidos";
             this.Text = "Form1";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridPedido)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();

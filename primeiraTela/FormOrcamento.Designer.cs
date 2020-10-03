@@ -44,9 +44,9 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnExcluir = new System.Windows.Forms.ToolStripButton();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btnPesquisarOrcamento = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.inputPesquisaOrcamento = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridOrcamento)).BeginInit();
@@ -59,7 +59,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // colunaValorOrcamento
@@ -97,13 +96,16 @@
             // gridOrcamento
             // 
             this.gridOrcamento.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridOrcamento.EmbeddedNavigator.UseWaitCursor = true;
             this.gridOrcamento.Location = new System.Drawing.Point(2, 2);
             this.gridOrcamento.MainView = this.gridView2;
             this.gridOrcamento.Name = "gridOrcamento";
-            this.gridOrcamento.Size = new System.Drawing.Size(796, 250);
+            this.gridOrcamento.Size = new System.Drawing.Size(796, 400);
             this.gridOrcamento.TabIndex = 20;
+            this.gridOrcamento.UseWaitCursor = true;
             this.gridOrcamento.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
+            this.gridOrcamento.Load += new System.EventHandler(this.gridOrcamento_Load);
             this.gridOrcamento.Click += new System.EventHandler(this.gridControl2_Click);
             // 
             // panelControl3
@@ -112,8 +114,9 @@
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl3.Location = new System.Drawing.Point(0, 100);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(800, 254);
+            this.panelControl3.Size = new System.Drawing.Size(800, 404);
             this.panelControl3.TabIndex = 21;
+            this.panelControl3.UseWaitCursor = true;
             // 
             // pictureBox3
             // 
@@ -122,15 +125,17 @@
             this.pictureBox3.Size = new System.Drawing.Size(195, 96);
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.UseWaitCursor = true;
             // 
             // panelControl2
             // 
             this.panelControl2.Controls.Add(this.pictureBox3);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl2.Location = new System.Drawing.Point(0, 354);
+            this.panelControl2.Location = new System.Drawing.Point(0, 504);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(800, 96);
             this.panelControl2.TabIndex = 20;
+            this.panelControl2.UseWaitCursor = true;
             // 
             // btnCadastrar
             // 
@@ -154,23 +159,25 @@
             // 
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
-            this.btnSair.Location = new System.Drawing.Point(760, 12);
+            this.btnSair.Location = new System.Drawing.Point(750, 12);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(28, 27);
             this.btnSair.TabIndex = 18;
             this.btnSair.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.UseWaitCursor = true;
             // 
             // btnMenu
             // 
             this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
-            this.btnMenu.Location = new System.Drawing.Point(724, 12);
+            this.btnMenu.Location = new System.Drawing.Point(714, 12);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(30, 27);
             this.btnMenu.TabIndex = 17;
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.UseWaitCursor = true;
             // 
             // toolStrip1
             // 
@@ -187,6 +194,7 @@
             this.toolStrip1.Size = new System.Drawing.Size(796, 25);
             this.toolStrip1.TabIndex = 19;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.UseWaitCursor = true;
             // 
             // btnExcluir
             // 
@@ -199,11 +207,11 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.btnPesquisarOrcamento);
             this.panelControl1.Controls.Add(this.pictureBox1);
             this.panelControl1.Controls.Add(this.btnSair);
             this.panelControl1.Controls.Add(this.btnMenu);
             this.panelControl1.Controls.Add(this.inputPesquisaOrcamento);
-            this.panelControl1.Controls.Add(this.pictureBox2);
             this.panelControl1.Controls.Add(this.panel1);
             this.panelControl1.Controls.Add(this.toolStrip1);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -211,62 +219,65 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(800, 100);
             this.panelControl1.TabIndex = 19;
+            this.panelControl1.UseWaitCursor = true;
+            // 
+            // btnPesquisarOrcamento
+            // 
+            this.btnPesquisarOrcamento.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisarOrcamento.ImageOptions.Image")));
+            this.btnPesquisarOrcamento.Location = new System.Drawing.Point(588, 21);
+            this.btnPesquisarOrcamento.Name = "btnPesquisarOrcamento";
+            this.btnPesquisarOrcamento.Size = new System.Drawing.Size(30, 27);
+            this.btnPesquisarOrcamento.TabIndex = 20;
+            this.btnPesquisarOrcamento.UseWaitCursor = true;
+            this.btnPesquisarOrcamento.Click += new System.EventHandler(this.btnPesquisarOrcamento_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(22, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(88, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.UseWaitCursor = true;
             // 
             // inputPesquisaOrcamento
             // 
             this.inputPesquisaOrcamento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.inputPesquisaOrcamento.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputPesquisaOrcamento.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.inputPesquisaOrcamento.Location = new System.Drawing.Point(117, 12);
+            this.inputPesquisaOrcamento.Location = new System.Drawing.Point(156, 26);
             this.inputPesquisaOrcamento.Name = "inputPesquisaOrcamento";
             this.inputPesquisaOrcamento.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.inputPesquisaOrcamento.Size = new System.Drawing.Size(428, 19);
             this.inputPesquisaOrcamento.TabIndex = 13;
             this.inputPesquisaOrcamento.Text = "Pesquisar orçamento";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.ImageLocation = "";
-            this.pictureBox2.Location = new System.Drawing.Point(551, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(28, 23);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
+            this.inputPesquisaOrcamento.UseWaitCursor = true;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(117, 37);
+            this.panel1.Location = new System.Drawing.Point(156, 51);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(453, 1);
             this.panel1.TabIndex = 15;
+            this.panel1.UseWaitCursor = true;
             // 
             // FormOrcamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormOrcamento";
             this.Text = "Form1";
+            this.TopMost = true;
+            this.UseWaitCursor = true;
+            this.Load += new System.EventHandler(this.FormOrcamento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridOrcamento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
@@ -280,7 +291,6 @@
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -303,7 +313,7 @@
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox inputPesquisaOrcamento;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
+        private DevExpress.XtraEditors.SimpleButton btnPesquisarOrcamento;
     }
 }

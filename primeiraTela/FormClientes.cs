@@ -21,5 +21,21 @@ namespace primeiraTela
         {
 
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            FormCadastroCliente f = new FormCadastroCliente();
+            f.ShowDialog();
+            f.Dispose();
+
+             
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            FormCadastroCliente f = new FormCadastroCliente();
+            new FormLogin().ShowDialog();
+            f.Dispose();
+        }
     }
 }

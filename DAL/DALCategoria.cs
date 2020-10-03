@@ -9,15 +9,17 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class DALCategoria
+  public class DALCategoria
     {
+        #region[Objetos/Variaveis]
         private DALConexao conexao;
 
         public DALCategoria(DALConexao cx)
         {
             this.conexao = cx;
         }
-
+        #endregion
+        #region[Incluir Categoria]
         public void Incluir(ModeloCategoria modelo)
         {
             SqlCommand cmd = new SqlCommand();
@@ -28,6 +30,8 @@ namespace DAL
             modelo.CatCod = Convert.ToInt32(cmd.ExecuteScalar());
             conexao.Desconectar();
         }
+        #endregion
+        #region[Alterar Categoria]
         public void Alterar(ModeloCategoria modelo)
         {
             SqlCommand cmd = new SqlCommand();
@@ -39,7 +43,8 @@ namespace DAL
             cmd.ExecuteNonQuery();
             conexao.Desconectar();
         }
-
+        #endregion
+        #region[Excluir Categoria]
         public void Excluir(int codigo)
         {
             SqlCommand cmd = new SqlCommand();
@@ -50,7 +55,8 @@ namespace DAL
             cmd.ExecuteNonQuery();
             conexao.Desconectar();
         }
-
+        #endregion
+        #region[Localizar a Categoria]
         public DataTable Localizar(String valor)
         {
             DataTable tabela = new DataTable();
@@ -58,7 +64,8 @@ namespace DAL
             da.Fill(tabela);
             return tabela;
         }
-
+        #endregion
+        #region[Buscar Categoria pelo id]
         public ModeloCategoria CarregaModeloCategoria(int codigo)
         {
             ModeloCategoria modelo = new ModeloCategoria();
@@ -66,16 +73,24 @@ namespace DAL
             cmd.Connection = conexao.ObjetoConexao;
             cmd.CommandText = "select * from categoria where cat_cod = @codigo";
             cmd.Parameters.AddWithValue("@codigo", codigo);
-            conexao.Conectar();
-            SqlDataReader registro = cmd.ExecuteReader();
-            if (registro.HasRows)
+            try
             {
-                registro.Read();
-                modelo.CatCod = Convert.ToInt32(registro["cat_cod"]);
-                modelo.CatNome = Convert.ToString(registro["cat_nome"]);
+                conexao.Conectar();
+                SqlDataReader registro = cmd.ExecuteReader();
+                if (registro.HasRows)
+                {
+                    registro.Read();
+                    modelo.CatCod = Convert.ToInt32(registro["cat_cod"]);
+                    modelo.CatNome = Convert.ToString(registro["cat_nome"]);
+                }
             }
-            conexao.Desconectar();
+            catch (Exception ex) { throw new Exception(ex.Message); }
+            finally
+            {
+                conexao.Desconectar();
+            }
             return modelo;
         }
+        #endregion
     }
 }

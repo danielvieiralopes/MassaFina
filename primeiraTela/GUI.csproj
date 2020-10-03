@@ -36,6 +36,7 @@
     <Reference Include="DevExpress.Data.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -54,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormModeloDeFormulárioDeCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModeloDeFormulárioDeCadastro.Designer.cs">
+      <DependentUpon>FormModeloDeFormulárioDeCadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCadastroMateriaPrima.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +135,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormModeloDeFormulárioDeCadastro.resx">
+      <DependentUpon>FormModeloDeFormulárioDeCadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCadastroCliente.resx">
       <DependentUpon>FormCadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +201,10 @@
     <ProjectReference Include="..\BBL\BLL.csproj">
       <Project>{683d9f99-7844-4197-9dd2-c3ba54cc9005}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{5c075018-1eac-4fbc-8f71-8ae9733999f4}</Project>
+      <Name>Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{904473c6-6874-46e8-ac1f-ed68a591da30}</Project>

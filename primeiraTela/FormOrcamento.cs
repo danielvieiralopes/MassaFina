@@ -21,5 +21,25 @@ namespace primeiraTela
         {
 
         }
+
+        private void gridOrcamento_Load(object sender, EventArgs e)
+        {
+            btn
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormOrcamento_Load(object sender, EventArgs e)
+        {
+           btnPesquisarOrcamento_Click(sender, e);
+        }
+
+        private void btnPesquisarOrcamento_Click(object sender, EventArgs e)
+        {
+              
+        }
     }
 }

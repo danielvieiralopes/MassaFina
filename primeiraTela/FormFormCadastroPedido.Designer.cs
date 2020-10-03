@@ -163,7 +163,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.inputEnderecoCadastroPedido);
             this.Controls.Add(this.inputDataEntregaCadastroPedido);
             this.Controls.Add(this.pictureBox1);
@@ -178,6 +178,7 @@
             this.Name = "FormFormCadastroPedido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.FormFormCadastroPedido_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Observação)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputValorCadastroPedido.Properties)).EndInit();

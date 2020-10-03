@@ -42,6 +42,8 @@
             this.inputQtdeCadastroMateria = new DevExpress.XtraEditors.TextEdit();
             this.inputDescricaoCadastroMateria = new DevExpress.XtraEditors.TextEdit();
             this.btnImgMateria = new System.Windows.Forms.PictureBox();
+            this.panelBototes = new DevExpress.XtraEditors.PanelControl();
+            this.panelDados = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.inputCustoCadastroMateria.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputMedidaCadastroMateria.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputValidadeCadastroMateria.Properties)).BeginInit();
@@ -52,12 +54,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.inputQtdeCadastroMateria.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputDescricaoCadastroMateria.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnImgMateria)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelBototes)).BeginInit();
+            this.panelBototes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelDados)).BeginInit();
+            this.panelDados.SuspendLayout();
             this.SuspendLayout();
             // 
             // inputCustoCadastroMateria
             // 
             this.inputCustoCadastroMateria.EditValue = "Custo";
-            this.inputCustoCadastroMateria.Location = new System.Drawing.Point(589, 291);
+            this.inputCustoCadastroMateria.Location = new System.Drawing.Point(570, 171);
             this.inputCustoCadastroMateria.Name = "inputCustoCadastroMateria";
             this.inputCustoCadastroMateria.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.inputCustoCadastroMateria.Properties.Appearance.Options.UseForeColor = true;
@@ -67,7 +73,7 @@
             // inputMedidaCadastroMateria
             // 
             this.inputMedidaCadastroMateria.EditValue = "Unidade de Medida";
-            this.inputMedidaCadastroMateria.Location = new System.Drawing.Point(429, 291);
+            this.inputMedidaCadastroMateria.Location = new System.Drawing.Point(410, 171);
             this.inputMedidaCadastroMateria.Name = "inputMedidaCadastroMateria";
             this.inputMedidaCadastroMateria.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.inputMedidaCadastroMateria.Properties.Appearance.Options.UseForeColor = true;
@@ -77,7 +83,7 @@
             // inputValidadeCadastroMateria
             // 
             this.inputValidadeCadastroMateria.EditValue = "Validade";
-            this.inputValidadeCadastroMateria.Location = new System.Drawing.Point(273, 291);
+            this.inputValidadeCadastroMateria.Location = new System.Drawing.Point(254, 171);
             this.inputValidadeCadastroMateria.Name = "inputValidadeCadastroMateria";
             this.inputValidadeCadastroMateria.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.inputValidadeCadastroMateria.Properties.Appearance.Options.UseForeColor = true;
@@ -109,7 +115,7 @@
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(419, 386);
+            this.btnCancelar.Location = new System.Drawing.Point(399, 28);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnCancelar.Size = new System.Drawing.Size(168, 36);
@@ -124,7 +130,7 @@
             this.btnCadastrar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.Image")));
             this.btnCadastrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCadastrar.Location = new System.Drawing.Point(211, 386);
+            this.btnCadastrar.Location = new System.Drawing.Point(191, 28);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnCadastrar.Size = new System.Drawing.Size(168, 36);
@@ -136,7 +142,7 @@
             // inputSetorCadastroMateria
             // 
             this.inputSetorCadastroMateria.EditValue = "Setor";
-            this.inputSetorCadastroMateria.Location = new System.Drawing.Point(513, 241);
+            this.inputSetorCadastroMateria.Location = new System.Drawing.Point(494, 121);
             this.inputSetorCadastroMateria.Name = "inputSetorCadastroMateria";
             this.inputSetorCadastroMateria.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.inputSetorCadastroMateria.Properties.Appearance.Options.UseForeColor = true;
@@ -146,7 +152,7 @@
             // inputDepartamentoCadastroMateria
             // 
             this.inputDepartamentoCadastroMateria.EditValue = "Departamento";
-            this.inputDepartamentoCadastroMateria.Location = new System.Drawing.Point(315, 241);
+            this.inputDepartamentoCadastroMateria.Location = new System.Drawing.Point(296, 121);
             this.inputDepartamentoCadastroMateria.Name = "inputDepartamentoCadastroMateria";
             this.inputDepartamentoCadastroMateria.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.inputDepartamentoCadastroMateria.Properties.Appearance.Options.UseForeColor = true;
@@ -156,7 +162,7 @@
             // inputMarcaCadastroMateria
             // 
             this.inputMarcaCadastroMateria.EditValue = "Marca";
-            this.inputMarcaCadastroMateria.Location = new System.Drawing.Point(123, 241);
+            this.inputMarcaCadastroMateria.Location = new System.Drawing.Point(104, 121);
             this.inputMarcaCadastroMateria.Name = "inputMarcaCadastroMateria";
             this.inputMarcaCadastroMateria.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.inputMarcaCadastroMateria.Properties.Appearance.Options.UseForeColor = true;
@@ -166,7 +172,7 @@
             // inputQtdeCadastroMateria
             // 
             this.inputQtdeCadastroMateria.EditValue = "Quantidade";
-            this.inputQtdeCadastroMateria.Location = new System.Drawing.Point(123, 291);
+            this.inputQtdeCadastroMateria.Location = new System.Drawing.Point(104, 171);
             this.inputQtdeCadastroMateria.Name = "inputQtdeCadastroMateria";
             this.inputQtdeCadastroMateria.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.inputQtdeCadastroMateria.Properties.Appearance.Options.UseForeColor = true;
@@ -176,7 +182,7 @@
             // inputDescricaoCadastroMateria
             // 
             this.inputDescricaoCadastroMateria.EditValue = "Descrição do Produto";
-            this.inputDescricaoCadastroMateria.Location = new System.Drawing.Point(123, 195);
+            this.inputDescricaoCadastroMateria.Location = new System.Drawing.Point(104, 75);
             this.inputDescricaoCadastroMateria.Name = "inputDescricaoCadastroMateria";
             this.inputDescricaoCadastroMateria.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.inputDescricaoCadastroMateria.Properties.Appearance.Options.UseForeColor = true;
@@ -193,28 +199,45 @@
             this.btnImgMateria.TabIndex = 27;
             this.btnImgMateria.TabStop = false;
             // 
+            // panelBototes
+            // 
+            this.panelBototes.Controls.Add(this.btnCancelar);
+            this.panelBototes.Controls.Add(this.btnCadastrar);
+            this.panelBototes.Location = new System.Drawing.Point(16, 441);
+            this.panelBototes.Name = "panelBototes";
+            this.panelBototes.Size = new System.Drawing.Size(760, 100);
+            this.panelBototes.TabIndex = 42;
+            // 
+            // panelDados
+            // 
+            this.panelDados.Controls.Add(this.inputCustoCadastroMateria);
+            this.panelDados.Controls.Add(this.inputDescricaoCadastroMateria);
+            this.panelDados.Controls.Add(this.inputQtdeCadastroMateria);
+            this.panelDados.Controls.Add(this.inputMedidaCadastroMateria);
+            this.panelDados.Controls.Add(this.inputMarcaCadastroMateria);
+            this.panelDados.Controls.Add(this.inputValidadeCadastroMateria);
+            this.panelDados.Controls.Add(this.inputDepartamentoCadastroMateria);
+            this.panelDados.Controls.Add(this.inputSetorCadastroMateria);
+            this.panelDados.Location = new System.Drawing.Point(16, 175);
+            this.panelDados.Name = "panelDados";
+            this.panelDados.Size = new System.Drawing.Size(760, 253);
+            this.panelDados.TabIndex = 43;
+            // 
             // FormCadastroMateriaPrima
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.inputCustoCadastroMateria);
-            this.Controls.Add(this.inputMedidaCadastroMateria);
-            this.Controls.Add(this.inputValidadeCadastroMateria);
+            this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.panelDados);
+            this.Controls.Add(this.panelBototes);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.inputSetorCadastroMateria);
-            this.Controls.Add(this.inputDepartamentoCadastroMateria);
-            this.Controls.Add(this.inputMarcaCadastroMateria);
-            this.Controls.Add(this.inputQtdeCadastroMateria);
-            this.Controls.Add(this.inputDescricaoCadastroMateria);
             this.Controls.Add(this.btnImgMateria);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCadastroMateriaPrima";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.inputCustoCadastroMateria.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputMedidaCadastroMateria.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputValidadeCadastroMateria.Properties)).EndInit();
@@ -225,6 +248,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.inputQtdeCadastroMateria.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputDescricaoCadastroMateria.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnImgMateria)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelBototes)).EndInit();
+            this.panelBototes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelDados)).EndInit();
+            this.panelDados.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,5 +272,7 @@
         private DevExpress.XtraEditors.TextEdit inputQtdeCadastroMateria;
         private DevExpress.XtraEditors.TextEdit inputDescricaoCadastroMateria;
         private System.Windows.Forms.PictureBox btnImgMateria;
+        private DevExpress.XtraEditors.PanelControl panelBototes;
+        private DevExpress.XtraEditors.PanelControl panelDados;
     }
 }

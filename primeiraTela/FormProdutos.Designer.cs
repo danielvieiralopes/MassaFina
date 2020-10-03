@@ -99,16 +99,17 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(706, 482);
+            this.panel2.Size = new System.Drawing.Size(800, 600);
             this.panel2.TabIndex = 15;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // gridProdutos
             // 
-            this.gridProdutos.Location = new System.Drawing.Point(0, 91);
+            this.gridProdutos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridProdutos.Location = new System.Drawing.Point(0, 85);
             this.gridProdutos.MainView = this.gridView2;
             this.gridProdutos.Name = "gridProdutos";
-            this.gridProdutos.Size = new System.Drawing.Size(706, 287);
+            this.gridProdutos.Size = new System.Drawing.Size(800, 399);
             this.gridProdutos.TabIndex = 19;
             this.gridProdutos.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -174,7 +175,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(706, 85);
+            this.panel3.Size = new System.Drawing.Size(800, 85);
             this.panel3.TabIndex = 17;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -183,7 +184,7 @@
             this.btnSair.BackColor = System.Drawing.Color.Transparent;
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
-            this.btnSair.Location = new System.Drawing.Point(666, 12);
+            this.btnSair.Location = new System.Drawing.Point(760, 12);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(28, 27);
             this.btnSair.TabIndex = 16;
@@ -196,7 +197,7 @@
             this.btnMenu.BackColor = System.Drawing.Color.Transparent;
             this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
-            this.btnMenu.Location = new System.Drawing.Point(630, 12);
+            this.btnMenu.Location = new System.Drawing.Point(724, 12);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(30, 27);
             this.btnMenu.TabIndex = 15;
@@ -231,7 +232,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 60);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip1.Size = new System.Drawing.Size(706, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
             this.toolStrip1.TabIndex = 14;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
@@ -291,7 +292,7 @@
             this.pictureBox2.ImageLocation = "";
             this.pictureBox2.Location = new System.Drawing.Point(555, 20);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(28, 23);
+            this.pictureBox2.Size = new System.Drawing.Size(19, 23);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
@@ -302,9 +303,9 @@
             this.panel4.Controls.Add(this.gridControl1);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 366);
+            this.panel4.Location = new System.Drawing.Point(0, 484);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(706, 116);
+            this.panel4.Size = new System.Drawing.Size(800, 116);
             this.panel4.TabIndex = 18;
             // 
             // gridControl1
@@ -354,13 +355,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(706, 482);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormProdutos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Produtos";
+            this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Black;
             this.Load += new System.EventHandler(this.Produtos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
