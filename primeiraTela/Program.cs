@@ -16,7 +16,7 @@ namespace primeiraTela
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormProdutos());
+            Application.Run(new FormMenu());
         }
     }
 }

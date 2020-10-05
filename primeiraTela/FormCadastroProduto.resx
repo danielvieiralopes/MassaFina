@@ -138,7 +138,7 @@
         M2Y+q55G6dSmgPT0YQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnImgProduto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbImagemProduto.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAC
         9wAAAvcBLRSNOAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAQbSURBVHhe7Zs9
@@ -213,6 +213,26 @@
         n3Ke0iUdiO58Kxd/JkZ963AeejcgsnUEBwAAZoPedz5Qb6BREFCgMxB8loCGBL0Bwdpj0HgAaAAHlgGg
         EQAAAACnwKkfAGAE6IwqsGgloZJ3UNUF6gcAAAAAoH1wDdYQqEgAgJ2gdwMAAKAPnGUAWBAjDqJ9+/4P
         bmKXYHo0K60AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnCarregarFotoProduto.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAG8AAABvAfGi3EMAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAAAwklEQVQ4T53TPwrCMBiH4Q4OdVLQsYPHELp4DMHFo7i7eA8XBwePIDjo6F7BtQcQ6vuDGJPYGmPh
+        ge9fPkJpM54KDa6YmrjNHAcT75E3jcL3QMoCUZzDFlIXiG5ik38WiA3uGGDYoY8z3MPyUUjVWkzRWkzh
+        JTesIjTjnvGSI/Qi19gEVFNPM+4ZL1GzhwWWAdXUiy4YYYtdQDX1vi8w33eJWaA0vegNxjjhElBNvZ9u
+        UGASKLpu8Pqd5YE6QjNmPqueRunUpoD09GEAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnRemoverFotoProduto.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAHYAAAB2AU57JggAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAAA00lEQVQ4T5WTMRLBQBSG03IOOj0HMKPSOwA9pRmMktbQUyidQMMV1K7gCvi/tS8Tm6zEN/PN2/fy
+        70uaJBEa8i5fXs7MKjOVm8/RwZlZlI58SHtjmWTbMmUhi4K/5E5KX57/lDtftGS3omRznKR93tHXmzc7
+        Q7I5DtICQF16szPcuy5gJy0A1NiCresC1tICQI0tWLkuYC4tANTYgpnrAibSAkCNLRi7LmAkLQDU2IKh
+        6wIG0gJNX/kHMDtDsjl60gJlks1Rl1f5lEWXkGcXWZMiSd6x5oIE0eNZCQAAAABJRU5ErkJggg==
 </value>
   </data>
 </root>

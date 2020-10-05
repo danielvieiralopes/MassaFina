@@ -24,7 +24,7 @@ namespace primeiraTela
 
         private void gridOrcamento_Load(object sender, EventArgs e)
         {
-            btn
+            
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

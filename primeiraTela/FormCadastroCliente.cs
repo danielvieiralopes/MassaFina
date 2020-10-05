@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Modelo;
 using DAL;
-using BLL;
 
 namespace primeiraTela
 {
