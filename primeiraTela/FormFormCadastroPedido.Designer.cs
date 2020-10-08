@@ -73,6 +73,7 @@
             this.btnCancelarCadastroPedido.Text = "Cancelar";
             this.btnCancelarCadastroPedido.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancelarCadastroPedido.UseVisualStyleBackColor = false;
+            this.btnCancelarCadastroPedido.Click += new System.EventHandler(this.btnCancelarCadastroPedido_Click);
             // 
             // btnCadastrarCadastroPedido
             // 

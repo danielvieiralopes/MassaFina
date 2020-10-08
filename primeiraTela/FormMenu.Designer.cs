@@ -69,6 +69,7 @@
             this.btnOrçamento.Text = "Orçamento";
             this.btnOrçamento.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnOrçamento.UseVisualStyleBackColor = true;
+            this.btnOrçamento.Click += new System.EventHandler(this.btnOrçamento_Click);
             // 
             // btnFinanceiro
             // 
@@ -82,6 +83,7 @@
             this.btnFinanceiro.Text = "Financeiro";
             this.btnFinanceiro.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnFinanceiro.UseVisualStyleBackColor = true;
+            this.btnFinanceiro.Click += new System.EventHandler(this.btnFinanceiro_Click);
             // 
             // btnPedidos
             // 
@@ -109,6 +111,7 @@
             this.btnVendas.Text = "Vendas";
             this.btnVendas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnVendas.UseVisualStyleBackColor = true;
+            this.btnVendas.Click += new System.EventHandler(this.btnVendas_Click);
             // 
             // btnClientes
             // 

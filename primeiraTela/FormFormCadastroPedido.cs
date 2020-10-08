@@ -21,5 +21,10 @@ namespace primeiraTela
         {
 
         }
+
+        private void btnCancelarCadastroPedido_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

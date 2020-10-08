@@ -79,13 +79,18 @@ namespace primeiraTela
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            new FormMenu().ShowDialog();
+            this.Hide();
+            FormMenu f = new FormMenu();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-
-            new FormLogin().ShowDialog();
+            this.Hide();
+            FormLogin f = new FormLogin();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

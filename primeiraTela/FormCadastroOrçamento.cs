@@ -16,5 +16,11 @@ namespace primeiraTela
         {
             InitializeComponent();
         }
+
+        private void btnCancelarOrcamento_Click(object sender, EventArgs e)
+        {
+
+            Close();
+        }
     }
 }

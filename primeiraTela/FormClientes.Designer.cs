@@ -145,6 +145,7 @@
             this.btnMenu.TabIndex = 17;
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // toolStrip1
             // 

@@ -220,6 +220,7 @@
             this.btnSair.TabIndex = 18;
             this.btnSair.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnMenu
             // 
@@ -231,6 +232,7 @@
             this.btnMenu.TabIndex = 17;
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // inputPesquisaMateria
             // 

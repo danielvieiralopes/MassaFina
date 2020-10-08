@@ -124,6 +124,7 @@
             this.btnCancelarOrcamento.Text = "Cancelar";
             this.btnCancelarOrcamento.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCancelarOrcamento.UseVisualStyleBackColor = false;
+            this.btnCancelarOrcamento.Click += new System.EventHandler(this.btnCancelarOrcamento_Click);
             // 
             // inputObsCadastroOrcamento
             // 

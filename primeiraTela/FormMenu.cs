@@ -24,13 +24,19 @@ namespace primeiraTela
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            new FormProdutos().ShowDialog();
+
+            this.Hide();
+            FormProdutos f = new FormProdutos();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            new FormPedidos().ShowDialog();
+            this.Hide();
+            FormPedidos f = new FormPedidos();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
 
         }
 
@@ -51,9 +57,11 @@ namespace primeiraTela
 
         private void button8_Click(object sender, EventArgs e)
         {
-            
-            new FormLogin().ShowDialog();
-            
+            this.Hide();
+            FormLogin f = new FormLogin();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+
         }
 
         private void FormMenu_Load(object sender, EventArgs e)
@@ -63,7 +71,28 @@ namespace primeiraTela
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new FormClientes().ShowDialog();
+            this.Hide();
+            FormClientes f = new FormClientes();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void btnVendas_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnFinanceiro_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOrçamento_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormOrcamento f = new FormOrcamento();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }
 }

@@ -166,6 +166,7 @@
             this.btnSair.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.UseWaitCursor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnMenu
             // 
@@ -178,6 +179,7 @@
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.UseWaitCursor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // toolStrip1
             // 
@@ -274,6 +276,7 @@
             this.Controls.Add(this.panelControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormOrcamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.TopMost = true;
             this.UseWaitCursor = true;
