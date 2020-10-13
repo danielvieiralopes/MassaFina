@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Modelo
 {
-    class ModeloMateria
+    public class ModeloMateria
     {
         public ModeloMateria()
         {

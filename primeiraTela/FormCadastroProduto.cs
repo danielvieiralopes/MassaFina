@@ -1,15 +1,13 @@
-﻿using System;
+﻿using BLL;
+using DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Globalization;
-using System.Threading.Tasks;
+using System.Text;
 using System.Windows.Forms;
-using BLL;
-using DAL;
 using Modelo;
 using System.IO;
 
@@ -34,32 +32,7 @@ namespace primeiraTela
 
         private void FormCadastroProduto_Load(object sender, EventArgs e)
         {
-            //combo da categoria
-            DALConexao cx = new DALConexao(DadosDaConexao.StringDeConexao);
-            BLLCategoria bll = new BLLCategoria(cx);
-            cbMateriaCadastroProduto.DataSource = bll.Localizar("");
-            cbMateriaCadastroProduto.DisplayMember = "materia_nome";
-            cbMateriaCadastroProduto.ValueMember = "materia_cod";
-            //cbCategoria.AutoCompleteMode = AutoCompleteMode.Suggest;
-            //cbCategoria.AutoCompleteSource = AutoCompleteSource.ListItems;
-            try
-            {
-                //combo da subcategoria
-                BLLSubCategoria sbll = new BLLSubCategoria(cx);
-                cbSubCategoria.DataSource = sbll.LocalizarPorCategoria((int)cbCategoria.SelectedValue);
-                cbSubCategoria.DisplayMember = "scat_nome";
-                cbSubCategoria.ValueMember = "scat_cod";
-            }
-            catch
-            {
-                //MessageBox.Show("Cadastre uma categoria");
-            }
-            //combo und medida
-            BLLUnidadeDeMedida ubll = new BLLUnidadeDeMedida(cx);
-            cbUnd.DataSource = ubll.Localizar("");
-            cbUnd.DisplayMember = "umed_nome";
-            cbUnd.ValueMember = "umed_cod";
-
+           
 
         }
 
@@ -224,6 +197,11 @@ namespace primeiraTela
         private void cbMateriaCadastroProduto_SelectedIndexChanged(object sender, EventArgs e)
         {
           
+        }
+
+        private void FormCadastroProduto_KeyDown(object sender, KeyEventArgs e)
+        {
+
         }
     }
 }

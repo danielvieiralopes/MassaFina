@@ -11,11 +11,14 @@ namespace BLL
 {
     public class BLLProduto
     {
+        #region[Objetos/Variaveis]
         private DALConexao conexao;
         public BLLProduto(DALConexao cx)
         {
             this.conexao = cx;
         }
+        #endregion
+        #region[Incluir Produto]
         public void Incluir(ModeloProduto obj)
         {
             if (obj.ProNome.Trim().Length == 0)
@@ -55,11 +58,15 @@ namespace BLL
             DALProduto DALobj = new DALProduto(conexao);
             DALobj.Incluir(obj);
         }
+        #endregion
+        #region[Excluir Produto]
         public void Excluir(int codigo)
         {
             DALProduto DALobj = new DALProduto(conexao);
             DALobj.Excluir(codigo);
         }
+        #endregion
+        #region[Alterar Produto]
         public void Alterar(ModeloProduto obj)
         {
             if (obj.ProNome.Trim().Length == 0)
@@ -105,15 +112,20 @@ namespace BLL
             DALProduto DALobj = new DALProduto(conexao);
             DALobj.Alterar(obj);
         }
+        #endregion
+        #region[Localizar Produto]
         public DataTable Localizar(String valor)
         {
             DALProduto DALobj = new DALProduto(conexao);
             return DALobj.Localizar(valor);
         }
+        #endregion
+        #region[Buscar Produto pelo id]
         public ModeloProduto CarregaModeloProduto(int codigo)
         {
             DALProduto DALobj = new DALProduto(conexao);
             return DALobj.CarregaModeloProduto(codigo);
         }
+        #endregion
     }
 }
