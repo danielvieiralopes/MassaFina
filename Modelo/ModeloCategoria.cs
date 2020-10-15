@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Modelo
 {
-   public class ModeloCategoria
+    public class ModeloCategoria : EntidadeBase
     {
         private int cat_cod;
         public int CatCod
@@ -21,7 +17,5 @@ namespace Modelo
             get { return this.cat_nome; }
             set { this.cat_nome = value; }
         }
-        public int id { get; set; }
-        public int MyProperty { get; set; }
     }
 }

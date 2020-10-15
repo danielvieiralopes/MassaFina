@@ -42,7 +42,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
-            this.inputPesquisaProduto = new System.Windows.Forms.TextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnExcluir = new System.Windows.Forms.ToolStripButton();
             this.btnEditar = new System.Windows.Forms.ToolStripButton();
@@ -58,6 +57,7 @@
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.inputPesquisaProduto = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridProdutos)).BeginInit();
@@ -69,6 +69,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputPesquisaProduto.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -165,10 +166,10 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.inputPesquisaProduto);
             this.panel3.Controls.Add(this.btnSair);
             this.panel3.Controls.Add(this.btnMenu);
             this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Controls.Add(this.inputPesquisaProduto);
             this.panel3.Controls.Add(this.toolStrip1);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.panel1);
@@ -204,20 +205,6 @@
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // inputPesquisaProduto
-            // 
-            this.inputPesquisaProduto.BackColor = System.Drawing.Color.White;
-            this.inputPesquisaProduto.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputPesquisaProduto.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputPesquisaProduto.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.inputPesquisaProduto.Location = new System.Drawing.Point(115, 16);
-            this.inputPesquisaProduto.Name = "inputPesquisaProduto";
-            this.inputPesquisaProduto.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.inputPesquisaProduto.Size = new System.Drawing.Size(428, 19);
-            this.inputPesquisaProduto.TabIndex = 10;
-            this.inputPesquisaProduto.Text = "Pesquisar produto";
-            this.inputPesquisaProduto.TextChanged += new System.EventHandler(this.UserInput_TextChanged);
             // 
             // toolStrip1
             // 
@@ -352,6 +339,17 @@
             // 
             this.gridColumn5.Name = "gridColumn5";
             // 
+            // inputPesquisaProduto
+            // 
+            this.inputPesquisaProduto.EditValue = "";
+            this.inputPesquisaProduto.Location = new System.Drawing.Point(115, 15);
+            this.inputPesquisaProduto.Name = "inputPesquisaProduto";
+            this.inputPesquisaProduto.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.inputPesquisaProduto.Properties.Appearance.Options.UseForeColor = true;
+            this.inputPesquisaProduto.Properties.NullValuePrompt = "Pesquisar produto";
+            this.inputPesquisaProduto.Size = new System.Drawing.Size(428, 20);
+            this.inputPesquisaProduto.TabIndex = 32;
+            // 
             // FormProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -379,6 +377,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputPesquisaProduto.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -412,7 +411,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private System.Windows.Forms.TextBox inputPesquisaProduto;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private DevExpress.XtraEditors.TextEdit inputPesquisaProduto;
     }
 }
