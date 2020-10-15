@@ -46,6 +46,8 @@
     <Compile Include="DALConexao.cs" />
     <Compile Include="DALMateria.cs" />
     <Compile Include="DALProduto.cs" />
+    <Compile Include="DALSubCategoria.cs" />
+    <Compile Include="DALUnidadeDeMedida.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

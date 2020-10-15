@@ -85,7 +85,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(121, 45);
+            this.panel1.Location = new System.Drawing.Point(115, 41);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(453, 1);
             this.panel1.TabIndex = 12;
@@ -184,7 +184,7 @@
             this.btnSair.BackColor = System.Drawing.Color.Transparent;
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
-            this.btnSair.Location = new System.Drawing.Point(760, 12);
+            this.btnSair.Location = new System.Drawing.Point(760, 16);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(28, 27);
             this.btnSair.TabIndex = 16;
@@ -197,7 +197,7 @@
             this.btnMenu.BackColor = System.Drawing.Color.Transparent;
             this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
-            this.btnMenu.Location = new System.Drawing.Point(724, 12);
+            this.btnMenu.Location = new System.Drawing.Point(724, 16);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(30, 27);
             this.btnMenu.TabIndex = 15;
@@ -211,7 +211,7 @@
             this.inputPesquisaProduto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.inputPesquisaProduto.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputPesquisaProduto.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.inputPesquisaProduto.Location = new System.Drawing.Point(121, 20);
+            this.inputPesquisaProduto.Location = new System.Drawing.Point(115, 16);
             this.inputPesquisaProduto.Name = "inputPesquisaProduto";
             this.inputPesquisaProduto.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.inputPesquisaProduto.Size = new System.Drawing.Size(428, 19);
@@ -221,6 +221,7 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackColor = System.Drawing.Color.Transparent;
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.toolStrip1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
@@ -290,7 +291,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.ImageLocation = "";
-            this.pictureBox2.Location = new System.Drawing.Point(555, 20);
+            this.pictureBox2.Location = new System.Drawing.Point(549, 16);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(19, 23);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;

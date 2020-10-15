@@ -235,4 +235,21 @@
         OXrSAmWSzVGXV/mURZeQZxdZkyJJ3rHmggTR41kJAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="cadastroToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        rAAAAKwBhgk01AAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEbSURBVEhL3dax
+        SgNBFIXhNdgEEkSDWAXiK6S2FcR04hOkVUwqSZF3sEpnYWFvYSHaiLEXhK2sfAabBA2Z/FfmwrAkMXvH
+        bTLwNcOdc4pNZjdh7eEBUzijDxw755IsWX1kD1ikiwpu/ECs8foUsMpFFPSwgVv84Anb+JcCCa+gjlNI
+        gexfIrpAw1/xiQa0pIOogjBc97TkCFWYC+aFq7vYh7ws/A07MQUrh1sKcoXnLcgdnqdggBJegj31G452
+        TMGBH24jvNY1/AyjbLg/82fBFzZxjV1oiYafQ+bMl909tjDBO2o4gYRfQOfMBfJ3P8Qj5G7Z9we7COfM
+        BU0/KL+gFq6QIjtnLnjGEN/B3jzmglUtLCj8pV/gZ4tLZhn1tgeXQfxdAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>36</value>
+  </metadata>
 </root>

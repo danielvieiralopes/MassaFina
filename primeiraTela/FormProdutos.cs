@@ -100,7 +100,10 @@ namespace primeiraTela
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            new FormCadastroProduto().ShowDialog();
+            this.Hide();
+            FormCadastroProduto f = new FormCadastroProduto();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }
 }

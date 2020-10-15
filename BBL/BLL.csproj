@@ -44,6 +44,8 @@
     <Compile Include="BLLCategoria.cs" />
     <Compile Include="BLLMateria.cs" />
     <Compile Include="BLLProduto.cs" />
+    <Compile Include="BLLSubCategoria.cs" />
+    <Compile Include="BLLUnidadeDeMedida.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -15,14 +15,14 @@ namespace primeiraTela
 {
     public partial class FormCadastroProduto : Form
     {
-        public string foto = "";
+        //public string foto = "";
 
 
-        public FormCadastroProduto()
-        {
+        //public FormCadastroProduto()
+        //{
 
-            InitializeComponent();
-        }
+        //    InitializeComponent();
+        //}
 
         private void btnCadastrarProduto_Click(object sender, EventArgs e)
         {
@@ -152,7 +152,10 @@ namespace primeiraTela
 
         private void btnCancelarProduto_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Hide();
+            FormProdutos f = new FormProdutos();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
 
         private void inputQtdeCadastroProduto_KeyPress(object sender, KeyPressEventArgs e)
@@ -202,6 +205,96 @@ namespace primeiraTela
         private void FormCadastroProduto_KeyDown(object sender, KeyEventArgs e)
         {
 
+        }
+
+        private void inputNomeCadastroProduto_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inputMargemCadastroProduto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (inputMargemCadastroProduto.Text.Contains(",") == false)
+            {
+                inputMargemCadastroProduto.Text += ",00";
+            }
+            else
+            {
+                if (inputMargemCadastroProduto.Text.IndexOf(",") == inputMargemCadastroProduto.Text.Length - 1)
+                {
+                    inputMargemCadastroProduto.Text += "00";
+                }
+            }
+            try
+            {
+                Double d = Convert.ToDouble(inputMargemCadastroProduto.Text);
+            }
+            catch
+            {
+                inputMargemCadastroProduto.Text = "0,00";
+            }
+        }
+
+        private void inputVendaCadastroProduto_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inputMargemCadastroProduto_Leave(object sender, EventArgs e)
+        {
+            if (inputMargemCadastroProduto.Text.Contains(",") == false)
+            {
+                inputMargemCadastroProduto.Text += ",00";
+            }
+            else
+            {
+                if (inputMargemCadastroProduto.Text.IndexOf(",") == inputMargemCadastroProduto.Text.Length - 1)
+                {
+                    inputMargemCadastroProduto.Text += "00";
+                }
+            }
+            try
+            {
+                Double d = Convert.ToDouble(inputMargemCadastroProduto.Text);
+            }
+            catch
+            {
+                inputMargemCadastroProduto.Text = "0,00";
+            }
+        }
+
+        private void inputQtdeCadastroProduto_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void categoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormCategoria f = new FormCategoria();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void subCategoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormSubCategoria f = new FormSubCategoria();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void unidadeDeMedidaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormUndMedida f = new FormUndMedida();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }
 }

@@ -44,5 +44,13 @@ namespace primeiraTela
         {
 
         }
+
+        private void FormLogin_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 27)
+            {
+                Close();
+            }
+        }
     }
 }

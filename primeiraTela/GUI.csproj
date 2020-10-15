@@ -55,6 +55,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormSubCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSubCategoria.Designer.cs">
+      <DependentUpon>FormSubCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoria.Designer.cs">
+      <DependentUpon>FormCategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormModeloDeFormulárioDeCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,8 +145,22 @@
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormUndMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUndMedida.Designer.cs">
+      <DependentUpon>FormUndMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MassaFinaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MassaFinaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCategoria.resx">
+      <DependentUpon>FormCategoria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormModeloDeFormulárioDeCadastro.resx">
       <DependentUpon>FormModeloDeFormulárioDeCadastro.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +200,12 @@
     <EmbeddedResource Include="FormProdutos.resx">
       <DependentUpon>FormProdutos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSubCategoria.resx">
+      <DependentUpon>FormSubCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUndMedida.resx">
+      <DependentUpon>FormUndMedida.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -184,6 +216,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="MassaFinaDataSet.xsc">
+      <DependentUpon>MassaFinaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MassaFinaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MassaFinaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MassaFinaDataSet.xss">
+      <DependentUpon>MassaFinaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
