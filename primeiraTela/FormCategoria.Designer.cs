@@ -135,6 +135,7 @@
             this.gridViewCategoria.AccessibleName = "";
             this.gridViewCategoria.AllowUserToAddRows = false;
             this.gridViewCategoria.AllowUserToDeleteRows = false;
+            this.gridViewCategoria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridViewCategoria.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gridViewCategoria.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridViewCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;

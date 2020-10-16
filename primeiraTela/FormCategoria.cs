@@ -61,31 +61,48 @@ namespace primeiraTela
 
         private void btnSalvarCategoria_Click(object sender, EventArgs e)
         {
-            ModeloCategoria modelo = new ModeloCategoria();
-            DALConexao cx = new DALConexao(DadosdaConexao.StringDeConexao);
-            modelo.CatCod = Convert.ToInt32(codigo);
-            modelo.CatNome = inputInserirCategoria.Text;
 
-            BLLCategoria bll = new BLLCategoria(cx);
-            bll.Alterar(modelo);
-            inputInserirCategoria.Text = String.Empty;
-            MessageBox.Show("Cadastro Alterado ");
-            btnInserirCategoria.Visible = true;
-            btnSalvarCategoria.Visible = false;
-            gridViewCategoria.DataSource = bll.Localizar(inputInserirCategoria.Text);
+            if (MessageBox.Show("Deseja efetuar alteração?", "Alterar item", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                ModeloCategoria modelo = new ModeloCategoria();
+                DALConexao cx = new DALConexao(DadosdaConexao.StringDeConexao);
+                modelo.CatCod = Convert.ToInt32(codigo);
+                modelo.CatNome = inputInserirCategoria.Text;
+
+                BLLCategoria bll = new BLLCategoria(cx);
+                bll.Alterar(modelo);
+                inputInserirCategoria.Text = String.Empty;
+                MessageBox.Show("Item alterado");
+                btnInserirCategoria.Visible = true;
+                btnSalvarCategoria.Visible = false;
+                gridViewCategoria.DataSource = bll.Localizar(inputInserirCategoria.Text);
+            }
+
+            else
+            {
+                MessageBox.Show("Item não alterado!", "Alterar item", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
         }
 
         private void btnInserirCategoria_Click(object sender, EventArgs e)
         {
-            ModeloCategoria modelo = new ModeloCategoria();
-            modelo.CatNome = inputInserirCategoria.Text;
-            DALConexao cx = new DALConexao(DadosdaConexao.StringDeConexao);
-            BLLCategoria bll = new BLLCategoria(cx);
-            bll.Incluir(modelo);
-            inputInserirCategoria.Text = String.Empty;
-            gridViewCategoria.DataSource = bll.Localizar(inputInserirCategoria.Text);
-            MessageBox.Show("Cadastro efetuado: Código " + modelo.CatCod.ToString());
+            if (MessageBox.Show("Confirma inclusão de categoria?", "Incluir Categoria", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                ModeloCategoria modelo = new ModeloCategoria();
+                modelo.CatNome = inputInserirCategoria.Text;
+                DALConexao cx = new DALConexao(DadosdaConexao.StringDeConexao);
+                BLLCategoria bll = new BLLCategoria(cx);
+                bll.Incluir(modelo);
+                inputInserirCategoria.Text = String.Empty;
+                gridViewCategoria.DataSource = bll.Localizar(inputInserirCategoria.Text);
+                MessageBox.Show("Cadastro efetuado: Código " + modelo.CatCod.ToString());
+            }
+            else
+            {
+                MessageBox.Show("Categoria não incluida!", "Incluir Categoria", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
 
         private void btnSairCategoria_Click(object sender, EventArgs e)
@@ -98,18 +115,28 @@ namespace primeiraTela
 
         private void btnExcluirCategoria_Click(object sender, EventArgs e)
         {
-            DALConexao cx = new DALConexao(DadosdaConexao.StringDeConexao);
-            BLLCategoria bll = new BLLCategoria(cx);
-            bll.Excluir(Convert.ToInt32(codigo));
+            if(MessageBox.Show("Você tem certeza que deseja remover esse item?","Remover item", MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                DALConexao cx = new DALConexao(DadosdaConexao.StringDeConexao);
+                BLLCategoria bll = new BLLCategoria(cx);
+                bll.Excluir(Convert.ToInt32(codigo));
 
-            MessageBox.Show("Categoria excluida com sucesso");
+                MessageBox.Show("Categoria excluida com sucesso!");
 
-            inputInserirCategoria.Text = String.Empty;
-            gridViewCategoria.DataSource = bll.Localizar(inputInserirCategoria.Text);
+                inputInserirCategoria.Text = String.Empty;
+                gridViewCategoria.DataSource = bll.Localizar(inputInserirCategoria.Text);
 
-            btnSalvarCategoria.Visible = false;
-            btnExcluirCategoria.Visible = false;
-            btnInserirCategoria.Visible = true;
+                btnSalvarCategoria.Visible = false;
+                btnExcluirCategoria.Visible = false;
+                btnInserirCategoria.Visible = true;
+
+            }
+            else
+            {
+                MessageBox.Show("Item não removido", "Remover item", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+           
         }
 
         private void gridViewCategoria_CellContentClick(object sender, DataGridViewCellEventArgs e)
