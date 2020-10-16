@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCategoria));
             this.toolStripCategoria = new System.Windows.Forms.ToolStrip();
             this.btnSairCategoria = new System.Windows.Forms.ToolStripButton();
+            this.btnMenu = new System.Windows.Forms.ToolStripButton();
             this.btnExcluirCategoria = new System.Windows.Forms.ToolStripButton();
             this.btnInserirCategoria = new System.Windows.Forms.ToolStripButton();
             this.btnSalvarCategoria = new System.Windows.Forms.ToolStripButton();
-            this.lblTitleForm = new System.Windows.Forms.ToolStripLabel();
             this.panelControlGridCategoria = new DevExpress.XtraEditors.PanelControl();
             this.gridViewCategoria = new System.Windows.Forms.DataGridView();
             this.panelControlTstripCategoria = new DevExpress.XtraEditors.PanelControl();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnPesquisarCategoria = new System.Windows.Forms.PictureBox();
             this.inputInserirCategoria = new DevExpress.XtraEditors.TextEdit();
             this.pictureBoxCategoria = new System.Windows.Forms.PictureBox();
             this.massaFinaDataSet1 = new primeiraTela.MassaFinaDataSet();
@@ -49,7 +49,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridViewCategoria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControlTstripCategoria)).BeginInit();
             this.panelControlTstripCategoria.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPesquisarCategoria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputInserirCategoria.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategoria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.massaFinaDataSet1)).BeginInit();
@@ -63,10 +63,10 @@
             this.toolStripCategoria.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStripCategoria.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnSairCategoria,
+            this.btnMenu,
             this.btnExcluirCategoria,
             this.btnInserirCategoria,
-            this.btnSalvarCategoria,
-            this.lblTitleForm});
+            this.btnSalvarCategoria});
             this.toolStripCategoria.Location = new System.Drawing.Point(2, 42);
             this.toolStripCategoria.Name = "toolStripCategoria";
             this.toolStripCategoria.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
@@ -83,6 +83,16 @@
             this.btnSairCategoria.Size = new System.Drawing.Size(46, 22);
             this.btnSairCategoria.Text = "Sair";
             this.btnSairCategoria.Click += new System.EventHandler(this.btnSairCategoria_Click);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
+            this.btnMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(57, 22);
+            this.btnMenu.Text = "Menu";
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnExcluirCategoria
             // 
@@ -115,12 +125,6 @@
             this.btnSalvarCategoria.Text = "Salvar";
             this.btnSalvarCategoria.Click += new System.EventHandler(this.btnSalvarCategoria_Click);
             // 
-            // lblTitleForm
-            // 
-            this.lblTitleForm.Name = "lblTitleForm";
-            this.lblTitleForm.Size = new System.Drawing.Size(135, 22);
-            this.lblTitleForm.Text = "Formulario de Categoria";
-            // 
             // panelControlGridCategoria
             // 
             this.panelControlGridCategoria.Controls.Add(this.gridViewCategoria);
@@ -146,13 +150,12 @@
             this.gridViewCategoria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridViewCategoria.Size = new System.Drawing.Size(399, 162);
             this.gridViewCategoria.TabIndex = 28;
-            this.gridViewCategoria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewCategoria_CellContentClick);
             this.gridViewCategoria.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewCategoria_CellDoubleClick);
             this.gridViewCategoria.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.gridViewCategoria_CellMouseClick);
             // 
             // panelControlTstripCategoria
             // 
-            this.panelControlTstripCategoria.Controls.Add(this.pictureBox2);
+            this.panelControlTstripCategoria.Controls.Add(this.btnPesquisarCategoria);
             this.panelControlTstripCategoria.Controls.Add(this.inputInserirCategoria);
             this.panelControlTstripCategoria.Controls.Add(this.pictureBoxCategoria);
             this.panelControlTstripCategoria.Controls.Add(this.toolStripCategoria);
@@ -162,22 +165,22 @@
             this.panelControlTstripCategoria.Size = new System.Drawing.Size(403, 69);
             this.panelControlTstripCategoria.TabIndex = 0;
             // 
-            // pictureBox2
+            // btnPesquisarCategoria
             // 
-            this.pictureBox2.AccessibleName = "";
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnPesquisarCategoria.AccessibleName = "";
+            this.btnPesquisarCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.ImageLocation = "";
-            this.pictureBox2.Location = new System.Drawing.Point(356, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(43, 20);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 33;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Tag = "";
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.btnPesquisarCategoria.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisarCategoria.Image")));
+            this.btnPesquisarCategoria.ImageLocation = "";
+            this.btnPesquisarCategoria.Location = new System.Drawing.Point(356, 12);
+            this.btnPesquisarCategoria.Name = "btnPesquisarCategoria";
+            this.btnPesquisarCategoria.Size = new System.Drawing.Size(43, 20);
+            this.btnPesquisarCategoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnPesquisarCategoria.TabIndex = 33;
+            this.btnPesquisarCategoria.TabStop = false;
+            this.btnPesquisarCategoria.Tag = "";
+            this.btnPesquisarCategoria.Click += new System.EventHandler(this.btnPesquisarCategoria_Click);
             // 
             // inputInserirCategoria
             // 
@@ -189,11 +192,12 @@
             this.inputInserirCategoria.Properties.NullValuePrompt = "Insira a categoria";
             this.inputInserirCategoria.Size = new System.Drawing.Size(278, 20);
             this.inputInserirCategoria.TabIndex = 31;
+            this.inputInserirCategoria.EditValueChanged += new System.EventHandler(this.inputInserirCategoria_EditValueChanged);
             // 
             // pictureBoxCategoria
             // 
             this.pictureBoxCategoria.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCategoria.Image")));
-            this.pictureBoxCategoria.Location = new System.Drawing.Point(12, 5);
+            this.pictureBoxCategoria.Location = new System.Drawing.Point(9, 8);
             this.pictureBoxCategoria.Name = "pictureBoxCategoria";
             this.pictureBoxCategoria.Size = new System.Drawing.Size(54, 38);
             this.pictureBoxCategoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -234,7 +238,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControlTstripCategoria)).EndInit();
             this.panelControlTstripCategoria.ResumeLayout(false);
             this.panelControlTstripCategoria.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPesquisarCategoria)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputInserirCategoria.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategoria)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.massaFinaDataSet1)).EndInit();
@@ -252,11 +256,11 @@
         private DevExpress.XtraEditors.TextEdit inputInserirCategoria;
         private System.Windows.Forms.DataGridView gridViewCategoria;
         private MassaFinaDataSet massaFinaDataSet1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ToolStripButton btnInserirCategoria;
         private System.Windows.Forms.ToolStripButton btnSalvarCategoria;
         private System.Windows.Forms.ToolStripButton btnExcluirCategoria;
-        private System.Windows.Forms.ToolStripLabel lblTitleForm;
         private DevExpress.XtraEditors.PanelControl panelControlBtnCategoria;
+        private System.Windows.Forms.PictureBox btnPesquisarCategoria;
+        private System.Windows.Forms.ToolStripButton btnMenu;
     }
 }

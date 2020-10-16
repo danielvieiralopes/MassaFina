@@ -18,8 +18,11 @@ namespace primeiraTela
 
         private void FormCategoria_Load(object sender, EventArgs e)
         {
-            gridControlCategoria_Click(sender, e);
+            
 
+            DALConexao cx = new DALConexao(DadosdaConexao.StringDeConexao);
+            BLLCategoria bll = new BLLCategoria(cx);
+            gridViewCategoria.DataSource = bll.Localizar(inputInserirCategoria.Text);
             gridViewCategoria.Columns[0].HeaderText = "Código";
             gridViewCategoria.Columns[0].Width = 50;
             gridViewCategoria.Columns[1].HeaderText = "Categoria";
@@ -28,13 +31,7 @@ namespace primeiraTela
             btnSalvarCategoria.Visible = false;
             btnExcluirCategoria.Visible = false;
         }
-        private void gridControlCategoria_Click(object sender, EventArgs e)
-        {
-            
-            DALConexao cx = new DALConexao(DadosdaConexao.StringDeConexao);
-            BLLCategoria bll = new BLLCategoria(cx);
-            gridViewCategoria.DataSource = bll.Localizar(inputInserirCategoria.Text);
-        }
+        
 
         private void gridViewCategoria_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -46,13 +43,6 @@ namespace primeiraTela
             btnExcluirCategoria.Visible = true;
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            DALConexao cx = new DALConexao(DadosdaConexao.StringDeConexao);
-            BLLCategoria bll = new BLLCategoria(cx);
-            gridViewCategoria.DataSource = bll.Localizar(inputInserirCategoria.Text);
-
-        }
 
         private void gridViewCategoria_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -75,6 +65,7 @@ namespace primeiraTela
                 MessageBox.Show("Item alterado");
                 btnInserirCategoria.Visible = true;
                 btnSalvarCategoria.Visible = false;
+                btnExcluirCategoria.Visible = false;
                 gridViewCategoria.DataSource = bll.Localizar(inputInserirCategoria.Text);
             }
 
@@ -96,7 +87,7 @@ namespace primeiraTela
                 bll.Incluir(modelo);
                 inputInserirCategoria.Text = String.Empty;
                 gridViewCategoria.DataSource = bll.Localizar(inputInserirCategoria.Text);
-                MessageBox.Show("Cadastro efetuado: Código " + modelo.CatCod.ToString());
+                MessageBox.Show("Cadastro efetuado!");
             }
             else
             {
@@ -139,9 +130,30 @@ namespace primeiraTela
            
         }
 
+        private void btnPesquisarCategoria_Click(object sender, EventArgs e)
+        {
+            DALConexao cx = new DALConexao(DadosdaConexao.StringDeConexao);
+            BLLCategoria bll = new BLLCategoria(cx);
+            gridViewCategoria.DataSource = bll.Localizar(inputInserirCategoria.Text);
+
+        }
+
+        private void inputInserirCategoria_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void gridViewCategoria_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormMenu f = new FormMenu();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }      
 }

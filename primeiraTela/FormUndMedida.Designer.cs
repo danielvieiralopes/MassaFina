@@ -30,23 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUndMedida));
             this.pictureBoxUndMedida = new System.Windows.Forms.PictureBox();
-            this.btnCancelarUndMedida = new System.Windows.Forms.Button();
-            this.btnCadastrarUndMedida = new System.Windows.Forms.Button();
             this.panelControlBtnUndMedida = new DevExpress.XtraEditors.PanelControl();
             this.toolStripUndMedida = new System.Windows.Forms.ToolStrip();
+            this.btnSairUndMedida = new System.Windows.Forms.ToolStripButton();
+            this.btnMenu = new System.Windows.Forms.ToolStripButton();
             this.btnExcluirUndMedida = new System.Windows.Forms.ToolStripButton();
-            this.btnEditarUndMedida = new System.Windows.Forms.ToolStripButton();
+            this.btnInserirUndMedida = new System.Windows.Forms.ToolStripButton();
+            this.btnSalvarUndMedida = new System.Windows.Forms.ToolStripButton();
             this.panelControlTstripUndMedida = new DevExpress.XtraEditors.PanelControl();
-            this.btnInserirCategoria = new DevExpress.XtraEditors.SimpleButton();
+            this.btnPesquisarUndMedida = new System.Windows.Forms.PictureBox();
             this.inputInserirUndMedida = new DevExpress.XtraEditors.TextEdit();
             this.panelControlGridUndMedida = new DevExpress.XtraEditors.PanelControl();
             this.gridViewUndMedida = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUndMedida)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControlBtnUndMedida)).BeginInit();
-            this.panelControlBtnUndMedida.SuspendLayout();
             this.toolStripUndMedida.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControlTstripUndMedida)).BeginInit();
             this.panelControlTstripUndMedida.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPesquisarUndMedida)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputInserirUndMedida.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControlGridUndMedida)).BeginInit();
             this.panelControlGridUndMedida.SuspendLayout();
@@ -56,52 +57,19 @@
             // pictureBoxUndMedida
             // 
             this.pictureBoxUndMedida.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUndMedida.Image")));
-            this.pictureBoxUndMedida.Location = new System.Drawing.Point(12, 5);
+            this.pictureBoxUndMedida.Location = new System.Drawing.Point(6, 10);
             this.pictureBoxUndMedida.Name = "pictureBoxUndMedida";
             this.pictureBoxUndMedida.Size = new System.Drawing.Size(54, 38);
             this.pictureBoxUndMedida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBoxUndMedida.TabIndex = 30;
             this.pictureBoxUndMedida.TabStop = false;
             // 
-            // btnCancelarUndMedida
-            // 
-            this.btnCancelarUndMedida.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnCancelarUndMedida.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarUndMedida.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelarUndMedida.Image")));
-            this.btnCancelarUndMedida.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelarUndMedida.Location = new System.Drawing.Point(194, 9);
-            this.btnCancelarUndMedida.Name = "btnCancelarUndMedida";
-            this.btnCancelarUndMedida.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnCancelarUndMedida.Size = new System.Drawing.Size(168, 36);
-            this.btnCancelarUndMedida.TabIndex = 26;
-            this.btnCancelarUndMedida.Text = "Cancelar";
-            this.btnCancelarUndMedida.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCancelarUndMedida.UseVisualStyleBackColor = false;
-            this.btnCancelarUndMedida.Click += new System.EventHandler(this.btnCancelarUndMedida_Click);
-            // 
-            // btnCadastrarUndMedida
-            // 
-            this.btnCadastrarUndMedida.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnCadastrarUndMedida.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarUndMedida.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrarUndMedida.Image")));
-            this.btnCadastrarUndMedida.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCadastrarUndMedida.Location = new System.Drawing.Point(10, 9);
-            this.btnCadastrarUndMedida.Name = "btnCadastrarUndMedida";
-            this.btnCadastrarUndMedida.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnCadastrarUndMedida.Size = new System.Drawing.Size(168, 36);
-            this.btnCadastrarUndMedida.TabIndex = 25;
-            this.btnCadastrarUndMedida.Text = "Cadastrar";
-            this.btnCadastrarUndMedida.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCadastrarUndMedida.UseVisualStyleBackColor = false;
-            // 
             // panelControlBtnUndMedida
             // 
-            this.panelControlBtnUndMedida.Controls.Add(this.btnCancelarUndMedida);
-            this.panelControlBtnUndMedida.Controls.Add(this.btnCadastrarUndMedida);
             this.panelControlBtnUndMedida.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControlBtnUndMedida.Location = new System.Drawing.Point(0, 170);
+            this.panelControlBtnUndMedida.Location = new System.Drawing.Point(0, 196);
             this.panelControlBtnUndMedida.Name = "panelControlBtnUndMedida";
-            this.panelControlBtnUndMedida.Size = new System.Drawing.Size(368, 52);
+            this.panelControlBtnUndMedida.Size = new System.Drawing.Size(368, 26);
             this.panelControlBtnUndMedida.TabIndex = 35;
             // 
             // toolStripUndMedida
@@ -110,14 +78,37 @@
             this.toolStripUndMedida.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripUndMedida.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStripUndMedida.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnSairUndMedida,
+            this.btnMenu,
             this.btnExcluirUndMedida,
-            this.btnEditarUndMedida});
-            this.toolStripUndMedida.Location = new System.Drawing.Point(2, 25);
+            this.btnInserirUndMedida,
+            this.btnSalvarUndMedida});
+            this.toolStripUndMedida.Location = new System.Drawing.Point(2, 42);
             this.toolStripUndMedida.Name = "toolStripUndMedida";
             this.toolStripUndMedida.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.toolStripUndMedida.Size = new System.Drawing.Size(364, 25);
             this.toolStripUndMedida.TabIndex = 29;
             this.toolStripUndMedida.Text = "toolStripUndMedida";
+            // 
+            // btnSairUndMedida
+            // 
+            this.btnSairUndMedida.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnSairUndMedida.Image = ((System.Drawing.Image)(resources.GetObject("btnSairUndMedida.Image")));
+            this.btnSairUndMedida.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSairUndMedida.Name = "btnSairUndMedida";
+            this.btnSairUndMedida.Size = new System.Drawing.Size(46, 22);
+            this.btnSairUndMedida.Text = "Sair";
+            this.btnSairUndMedida.Click += new System.EventHandler(this.btnSairCategoria_Click);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
+            this.btnMenu.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(57, 22);
+            this.btnMenu.Text = "Menu";
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnExcluirUndMedida
             // 
@@ -127,56 +118,76 @@
             this.btnExcluirUndMedida.Name = "btnExcluirUndMedida";
             this.btnExcluirUndMedida.Size = new System.Drawing.Size(61, 22);
             this.btnExcluirUndMedida.Text = "Excluir";
+            this.btnExcluirUndMedida.Click += new System.EventHandler(this.btnExcluirUndMedida_Click);
             // 
-            // btnEditarUndMedida
+            // btnInserirUndMedida
             // 
-            this.btnEditarUndMedida.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnEditarUndMedida.Image = ((System.Drawing.Image)(resources.GetObject("btnEditarUndMedida.Image")));
-            this.btnEditarUndMedida.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnEditarUndMedida.Name = "btnEditarUndMedida";
-            this.btnEditarUndMedida.Size = new System.Drawing.Size(58, 22);
-            this.btnEditarUndMedida.Text = "Editar";
+            this.btnInserirUndMedida.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnInserirUndMedida.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInserirUndMedida.Image = ((System.Drawing.Image)(resources.GetObject("btnInserirUndMedida.Image")));
+            this.btnInserirUndMedida.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnInserirUndMedida.Name = "btnInserirUndMedida";
+            this.btnInserirUndMedida.Size = new System.Drawing.Size(60, 22);
+            this.btnInserirUndMedida.Text = "Inserir";
+            this.btnInserirUndMedida.Click += new System.EventHandler(this.btnInserirUndMedida_Click);
+            // 
+            // btnSalvarUndMedida
+            // 
+            this.btnSalvarUndMedida.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnSalvarUndMedida.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvarUndMedida.Image")));
+            this.btnSalvarUndMedida.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSalvarUndMedida.Name = "btnSalvarUndMedida";
+            this.btnSalvarUndMedida.Size = new System.Drawing.Size(58, 22);
+            this.btnSalvarUndMedida.Text = "Salvar";
+            this.btnSalvarUndMedida.Click += new System.EventHandler(this.btnSalvarUndMedida_Click);
             // 
             // panelControlTstripUndMedida
             // 
-            this.panelControlTstripUndMedida.Controls.Add(this.btnInserirCategoria);
+            this.panelControlTstripUndMedida.Controls.Add(this.btnPesquisarUndMedida);
             this.panelControlTstripUndMedida.Controls.Add(this.inputInserirUndMedida);
             this.panelControlTstripUndMedida.Controls.Add(this.pictureBoxUndMedida);
             this.panelControlTstripUndMedida.Controls.Add(this.toolStripUndMedida);
             this.panelControlTstripUndMedida.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControlTstripUndMedida.Location = new System.Drawing.Point(0, 0);
             this.panelControlTstripUndMedida.Name = "panelControlTstripUndMedida";
-            this.panelControlTstripUndMedida.Size = new System.Drawing.Size(368, 52);
+            this.panelControlTstripUndMedida.Size = new System.Drawing.Size(368, 69);
             this.panelControlTstripUndMedida.TabIndex = 34;
             // 
-            // btnInserirCategoria
+            // btnPesquisarUndMedida
             // 
-            this.btnInserirCategoria.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.btnInserirCategoria.Appearance.Options.UseFont = true;
-            this.btnInserirCategoria.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnInserirCategoria.ImageOptions.Image")));
-            this.btnInserirCategoria.Location = new System.Drawing.Point(232, 5);
-            this.btnInserirCategoria.Name = "btnInserirCategoria";
-            this.btnInserirCategoria.Size = new System.Drawing.Size(24, 20);
-            this.btnInserirCategoria.TabIndex = 34;
-            this.btnInserirCategoria.Click += new System.EventHandler(this.btnInserirCategoria_Click);
+            this.btnPesquisarUndMedida.AccessibleName = "";
+            this.btnPesquisarUndMedida.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPesquisarUndMedida.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisarUndMedida.Image")));
+            this.btnPesquisarUndMedida.ImageLocation = "";
+            this.btnPesquisarUndMedida.Location = new System.Drawing.Point(317, 12);
+            this.btnPesquisarUndMedida.Name = "btnPesquisarUndMedida";
+            this.btnPesquisarUndMedida.Size = new System.Drawing.Size(43, 20);
+            this.btnPesquisarUndMedida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnPesquisarUndMedida.TabIndex = 34;
+            this.btnPesquisarUndMedida.TabStop = false;
+            this.btnPesquisarUndMedida.Tag = "";
+            this.btnPesquisarUndMedida.Click += new System.EventHandler(this.btnPesquisarUndMedida_Click);
             // 
             // inputInserirUndMedida
             // 
             this.inputInserirUndMedida.EditValue = "";
-            this.inputInserirUndMedida.Location = new System.Drawing.Point(72, 5);
+            this.inputInserirUndMedida.Location = new System.Drawing.Point(69, 12);
             this.inputInserirUndMedida.Name = "inputInserirUndMedida";
             this.inputInserirUndMedida.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.inputInserirUndMedida.Properties.Appearance.Options.UseForeColor = true;
             this.inputInserirUndMedida.Properties.NullValuePrompt = "Insira a  unidade de medida";
-            this.inputInserirUndMedida.Size = new System.Drawing.Size(154, 20);
+            this.inputInserirUndMedida.Size = new System.Drawing.Size(241, 20);
             this.inputInserirUndMedida.TabIndex = 33;
+            this.inputInserirUndMedida.EditValueChanged += new System.EventHandler(this.inputInserirUndMedida_EditValueChanged);
             // 
             // panelControlGridUndMedida
             // 
             this.panelControlGridUndMedida.Controls.Add(this.gridViewUndMedida);
-            this.panelControlGridUndMedida.Location = new System.Drawing.Point(0, 53);
+            this.panelControlGridUndMedida.Location = new System.Drawing.Point(0, 70);
             this.panelControlGridUndMedida.Name = "panelControlGridUndMedida";
-            this.panelControlGridUndMedida.Size = new System.Drawing.Size(368, 120);
+            this.panelControlGridUndMedida.Size = new System.Drawing.Size(365, 123);
             this.panelControlGridUndMedida.TabIndex = 36;
             // 
             // gridViewUndMedida
@@ -191,8 +202,10 @@
             this.gridViewUndMedida.Location = new System.Drawing.Point(2, 2);
             this.gridViewUndMedida.Name = "gridViewUndMedida";
             this.gridViewUndMedida.ReadOnly = true;
-            this.gridViewUndMedida.Size = new System.Drawing.Size(364, 116);
+            this.gridViewUndMedida.Size = new System.Drawing.Size(361, 119);
             this.gridViewUndMedida.TabIndex = 29;
+            this.gridViewUndMedida.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewUndMedida_CellDoubleClick);
+            this.gridViewUndMedida.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.gridViewUndMedida_CellMouseClick);
             // 
             // FormUndMedida
             // 
@@ -206,14 +219,15 @@
             this.Name = "FormUndMedida";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormUndMedida";
+            this.Load += new System.EventHandler(this.FormUndMedida_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUndMedida)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControlBtnUndMedida)).EndInit();
-            this.panelControlBtnUndMedida.ResumeLayout(false);
             this.toolStripUndMedida.ResumeLayout(false);
             this.toolStripUndMedida.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControlTstripUndMedida)).EndInit();
             this.panelControlTstripUndMedida.ResumeLayout(false);
             this.panelControlTstripUndMedida.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPesquisarUndMedida)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputInserirUndMedida.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControlGridUndMedida)).EndInit();
             this.panelControlGridUndMedida.ResumeLayout(false);
@@ -224,16 +238,17 @@
 
         #endregion
         private System.Windows.Forms.PictureBox pictureBoxUndMedida;
-        private System.Windows.Forms.Button btnCancelarUndMedida;
-        private System.Windows.Forms.Button btnCadastrarUndMedida;
         private DevExpress.XtraEditors.PanelControl panelControlBtnUndMedida;
         private System.Windows.Forms.ToolStrip toolStripUndMedida;
         private System.Windows.Forms.ToolStripButton btnExcluirUndMedida;
-        private System.Windows.Forms.ToolStripButton btnEditarUndMedida;
         private DevExpress.XtraEditors.PanelControl panelControlTstripUndMedida;
         private DevExpress.XtraEditors.PanelControl panelControlGridUndMedida;
-        private DevExpress.XtraEditors.SimpleButton btnInserirCategoria;
         private DevExpress.XtraEditors.TextEdit inputInserirUndMedida;
         private System.Windows.Forms.DataGridView gridViewUndMedida;
+        private System.Windows.Forms.ToolStripButton btnSalvarUndMedida;
+        private System.Windows.Forms.ToolStripButton btnInserirUndMedida;
+        private System.Windows.Forms.ToolStripButton btnSairUndMedida;
+        private System.Windows.Forms.PictureBox btnPesquisarUndMedida;
+        private System.Windows.Forms.ToolStripButton btnMenu;
     }
 }
