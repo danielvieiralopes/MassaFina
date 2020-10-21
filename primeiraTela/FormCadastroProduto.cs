@@ -10,11 +10,17 @@ using System.Text;
 using System.Windows.Forms;
 using Modelo;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace primeiraTela
 {
+    
     public partial class FormCadastroProduto : Form
     {
+        int catCodigo;
+        int scatCodigo;
+        int umedCodigo;
+
         //public string foto = "";
 
 
@@ -32,7 +38,24 @@ namespace primeiraTela
 
         private void FormCadastroProduto_Load(object sender, EventArgs e)
         {
-           
+            DALConexao cx = new DALConexao(DadosdaConexao.StringDeConexao);
+            
+            BLLCategoria bll = new BLLCategoria(cx);
+            lkUpEditCategoriaCadastroProduto.Properties.DataSource = bll.Localizar("");
+            lkUpEditCategoriaCadastroProduto.Properties.DisplayMember = "cat_nome";
+            lkUpEditCategoriaCadastroProduto.Properties.ValueMember = "cat_cod";
+
+            BLLSubCategoria bllSubCategoria = new BLLSubCategoria(cx);
+            lkUpEditSubCategoriaCadastroProduto.Properties.DataSource = bllSubCategoria.LocalizarPorCategoria(catCodigo);
+            lkUpEditSubCategoriaCadastroProduto.Properties.DisplayMember = "scat_nome";
+            lkUpEditSubCategoriaCadastroProduto.Properties.ValueMember = "scat_cod";
+            lkUpEditSubCategoriaCadastroProduto.CascadingOwner = lkUpEditCategoriaCadastroProduto;
+
+            BLLUnidadeDeMedida bllUnidadeDeMedida = new BLLUnidadeDeMedida(cx);
+            lkUpEditUndMedidaCadastroProduto.Properties.DataSource = bllUnidadeDeMedida.Localizar("");
+            lkUpEditUndMedidaCadastroProduto.Properties.DisplayMember = "umed_nome";
+            lkUpEditUndMedidaCadastroProduto.Properties.DisplayMember = "umed_cod";
+
 
         }
 
@@ -295,6 +318,38 @@ namespace primeiraTela
             FormUndMedida f = new FormUndMedida();
             f.Closed += (s, args) => this.Close();
             f.Show();
+        }
+
+        private void lkUpEditCategoriaCadastroProduto_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lkUpEditCategoriaCadastroProduto_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            catCodigo = Convert.ToInt32(lkUpEditCategoriaCadastroProduto.GetColumnValue("cat_cod"));
+        }
+
+        private void lkUpEditSubCategoriaCadastroProduto_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lkUpEditSubCategoriaCadastroProduto_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            scatCodigo = Convert.ToInt32(lkUpEditCategoriaCadastroProduto.GetColumnValue("cat_cod"));
+
+        }
+
+        private void lkUpEditUndMedidaCadastroProduto_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lkUpEditUndMedidaCadastroProduto_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            umedCodigo = Convert.ToInt32(lkUpEditCategoriaCadastroProduto.GetColumnValue("cat_cod"));
+
         }
     }
 }

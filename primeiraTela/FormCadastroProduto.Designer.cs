@@ -49,10 +49,6 @@
             this.inputVendaCadastroProduto = new DevExpress.XtraEditors.TextEdit();
             this.panelBotoesCadastroProduto = new DevExpress.XtraEditors.PanelControl();
             this.panelDadosCadastroProduto = new DevExpress.XtraEditors.PanelControl();
-            this.cbSubCategoriaCadastroProduto = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.cbCategoriaCadastroProduto = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.cbUndMedidaCadastroProduto = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.cbMateriaCadastroProduto = new DevExpress.XtraEditors.ComboBoxEdit();
             this.inputCustoCadastroProduto = new DevExpress.XtraEditors.TextEdit();
             this.btnCarregarFotoProduto = new DevExpress.XtraEditors.SimpleButton();
             this.btnRemoverFotoProduto = new DevExpress.XtraEditors.SimpleButton();
@@ -61,6 +57,10 @@
             this.categoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.subCategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unidadeDeMedidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lkUpEditCategoriaCadastroProduto = new DevExpress.XtraEditors.LookUpEdit();
+            this.lkUpEditMateriaCadastroProduto = new DevExpress.XtraEditors.LookUpEdit();
+            this.lkUpEditUndMedidaCadastroProduto = new DevExpress.XtraEditors.LookUpEdit();
+            this.lkUpEditSubCategoriaCadastroProduto = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.inputDescricaoCadastroProduto.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputQtdeCadastroProduto.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputNomeCadastroProduto.Properties)).BeginInit();
@@ -73,12 +73,12 @@
             this.panelBotoesCadastroProduto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelDadosCadastroProduto)).BeginInit();
             this.panelDadosCadastroProduto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cbSubCategoriaCadastroProduto.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbCategoriaCadastroProduto.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbUndMedidaCadastroProduto.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbMateriaCadastroProduto.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputCustoCadastroProduto.Properties)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lkUpEditCategoriaCadastroProduto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkUpEditMateriaCadastroProduto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkUpEditUndMedidaCadastroProduto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkUpEditSubCategoriaCadastroProduto.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancelarProduto
@@ -223,10 +223,10 @@
             // 
             // panelDadosCadastroProduto
             // 
-            this.panelDadosCadastroProduto.Controls.Add(this.cbSubCategoriaCadastroProduto);
-            this.panelDadosCadastroProduto.Controls.Add(this.cbCategoriaCadastroProduto);
-            this.panelDadosCadastroProduto.Controls.Add(this.cbUndMedidaCadastroProduto);
-            this.panelDadosCadastroProduto.Controls.Add(this.cbMateriaCadastroProduto);
+            this.panelDadosCadastroProduto.Controls.Add(this.lkUpEditUndMedidaCadastroProduto);
+            this.panelDadosCadastroProduto.Controls.Add(this.lkUpEditSubCategoriaCadastroProduto);
+            this.panelDadosCadastroProduto.Controls.Add(this.lkUpEditMateriaCadastroProduto);
+            this.panelDadosCadastroProduto.Controls.Add(this.lkUpEditCategoriaCadastroProduto);
             this.panelDadosCadastroProduto.Controls.Add(this.inputCustoCadastroProduto);
             this.panelDadosCadastroProduto.Controls.Add(this.inputNomeCadastroProduto);
             this.panelDadosCadastroProduto.Controls.Add(this.inputVendaCadastroProduto);
@@ -238,47 +238,6 @@
             this.panelDadosCadastroProduto.Name = "panelDadosCadastroProduto";
             this.panelDadosCadastroProduto.Size = new System.Drawing.Size(776, 242);
             this.panelDadosCadastroProduto.TabIndex = 28;
-            // 
-            // cbSubCategoriaCadastroProduto
-            // 
-            this.cbSubCategoriaCadastroProduto.Location = new System.Drawing.Point(494, 88);
-            this.cbSubCategoriaCadastroProduto.Name = "cbSubCategoriaCadastroProduto";
-            this.cbSubCategoriaCadastroProduto.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbSubCategoriaCadastroProduto.Properties.NullValuePrompt = "SubCategoria";
-            this.cbSubCategoriaCadastroProduto.Size = new System.Drawing.Size(170, 20);
-            this.cbSubCategoriaCadastroProduto.TabIndex = 16;
-            // 
-            // cbCategoriaCadastroProduto
-            // 
-            this.cbCategoriaCadastroProduto.Location = new System.Drawing.Point(289, 88);
-            this.cbCategoriaCadastroProduto.Name = "cbCategoriaCadastroProduto";
-            this.cbCategoriaCadastroProduto.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbCategoriaCadastroProduto.Properties.NullValuePrompt = "Categoria";
-            this.cbCategoriaCadastroProduto.Size = new System.Drawing.Size(175, 20);
-            this.cbCategoriaCadastroProduto.TabIndex = 15;
-            // 
-            // cbUndMedidaCadastroProduto
-            // 
-            this.cbUndMedidaCadastroProduto.Location = new System.Drawing.Point(195, 174);
-            this.cbUndMedidaCadastroProduto.Name = "cbUndMedidaCadastroProduto";
-            this.cbUndMedidaCadastroProduto.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbUndMedidaCadastroProduto.Properties.NullValuePrompt = "Unidade de Medida";
-            this.cbUndMedidaCadastroProduto.Size = new System.Drawing.Size(119, 20);
-            this.cbUndMedidaCadastroProduto.TabIndex = 19;
-            // 
-            // cbMateriaCadastroProduto
-            // 
-            this.cbMateriaCadastroProduto.Location = new System.Drawing.Point(104, 132);
-            this.cbMateriaCadastroProduto.Name = "cbMateriaCadastroProduto";
-            this.cbMateriaCadastroProduto.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbMateriaCadastroProduto.Properties.NullValuePrompt = "Matéria prima";
-            this.cbMateriaCadastroProduto.Size = new System.Drawing.Size(560, 20);
-            this.cbMateriaCadastroProduto.TabIndex = 17;
-            this.cbMateriaCadastroProduto.SelectedIndexChanged += new System.EventHandler(this.cbMateriaCadastroProduto_SelectedIndexChanged);
             // 
             // inputCustoCadastroProduto
             // 
@@ -360,6 +319,60 @@
             this.unidadeDeMedidaToolStripMenuItem.Text = "Unidade de Medida";
             this.unidadeDeMedidaToolStripMenuItem.Click += new System.EventHandler(this.unidadeDeMedidaToolStripMenuItem_Click);
             // 
+            // lkUpEditCategoriaCadastroProduto
+            // 
+            this.lkUpEditCategoriaCadastroProduto.Location = new System.Drawing.Point(286, 89);
+            this.lkUpEditCategoriaCadastroProduto.Name = "lkUpEditCategoriaCadastroProduto";
+            this.lkUpEditCategoriaCadastroProduto.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lkUpEditCategoriaCadastroProduto.Properties.NullText = "";
+            this.lkUpEditCategoriaCadastroProduto.Properties.NullValuePrompt = "Selecione a categoria";
+            this.lkUpEditCategoriaCadastroProduto.Properties.ShowHeader = false;
+            this.lkUpEditCategoriaCadastroProduto.Size = new System.Drawing.Size(175, 20);
+            this.lkUpEditCategoriaCadastroProduto.TabIndex = 30;
+            this.lkUpEditCategoriaCadastroProduto.EditValueChanged += new System.EventHandler(this.lkUpEditCategoriaCadastroProduto_EditValueChanged);
+            this.lkUpEditCategoriaCadastroProduto.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lkUpEditCategoriaCadastroProduto_MouseDoubleClick);
+            // 
+            // lkUpEditMateriaCadastroProduto
+            // 
+            this.lkUpEditMateriaCadastroProduto.Location = new System.Drawing.Point(104, 134);
+            this.lkUpEditMateriaCadastroProduto.Name = "lkUpEditMateriaCadastroProduto";
+            this.lkUpEditMateriaCadastroProduto.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lkUpEditMateriaCadastroProduto.Properties.NullText = "";
+            this.lkUpEditMateriaCadastroProduto.Properties.NullValuePrompt = "Materia prima";
+            this.lkUpEditMateriaCadastroProduto.Properties.ShowHeader = false;
+            this.lkUpEditMateriaCadastroProduto.Size = new System.Drawing.Size(560, 20);
+            this.lkUpEditMateriaCadastroProduto.TabIndex = 31;
+            // 
+            // lkUpEditUndMedidaCadastroProduto
+            // 
+            this.lkUpEditUndMedidaCadastroProduto.Location = new System.Drawing.Point(193, 174);
+            this.lkUpEditUndMedidaCadastroProduto.Name = "lkUpEditUndMedidaCadastroProduto";
+            this.lkUpEditUndMedidaCadastroProduto.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lkUpEditUndMedidaCadastroProduto.Properties.NullText = "";
+            this.lkUpEditUndMedidaCadastroProduto.Properties.NullValuePrompt = "Unidade de medida";
+            this.lkUpEditUndMedidaCadastroProduto.Properties.ShowHeader = false;
+            this.lkUpEditUndMedidaCadastroProduto.Size = new System.Drawing.Size(119, 20);
+            this.lkUpEditUndMedidaCadastroProduto.TabIndex = 32;
+            this.lkUpEditUndMedidaCadastroProduto.EditValueChanged += new System.EventHandler(this.lkUpEditUndMedidaCadastroProduto_EditValueChanged);
+            this.lkUpEditUndMedidaCadastroProduto.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lkUpEditUndMedidaCadastroProduto_MouseDoubleClick);
+            // 
+            // lkUpEditSubCategoriaCadastroProduto
+            // 
+            this.lkUpEditSubCategoriaCadastroProduto.Location = new System.Drawing.Point(494, 89);
+            this.lkUpEditSubCategoriaCadastroProduto.Name = "lkUpEditSubCategoriaCadastroProduto";
+            this.lkUpEditSubCategoriaCadastroProduto.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lkUpEditSubCategoriaCadastroProduto.Properties.NullText = "";
+            this.lkUpEditSubCategoriaCadastroProduto.Properties.NullValuePrompt = "Sub categoria";
+            this.lkUpEditSubCategoriaCadastroProduto.Properties.ShowHeader = false;
+            this.lkUpEditSubCategoriaCadastroProduto.Size = new System.Drawing.Size(170, 20);
+            this.lkUpEditSubCategoriaCadastroProduto.TabIndex = 33;
+            this.lkUpEditSubCategoriaCadastroProduto.DoubleClick += new System.EventHandler(this.lkUpEditSubCategoriaCadastroProduto_DoubleClick);
+            this.lkUpEditSubCategoriaCadastroProduto.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lkUpEditSubCategoriaCadastroProduto_MouseDoubleClick);
+            // 
             // FormCadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -392,13 +405,13 @@
             this.panelBotoesCadastroProduto.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelDadosCadastroProduto)).EndInit();
             this.panelDadosCadastroProduto.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.cbSubCategoriaCadastroProduto.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbCategoriaCadastroProduto.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbUndMedidaCadastroProduto.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbMateriaCadastroProduto.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputCustoCadastroProduto.Properties)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lkUpEditCategoriaCadastroProduto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkUpEditMateriaCadastroProduto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkUpEditUndMedidaCadastroProduto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lkUpEditSubCategoriaCadastroProduto.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -420,14 +433,14 @@
         private DevExpress.XtraEditors.SimpleButton btnCarregarFotoProduto;
         private DevExpress.XtraEditors.SimpleButton btnRemoverFotoProduto;
         private DevExpress.XtraEditors.TextEdit inputCustoCadastroProduto;
-        private DevExpress.XtraEditors.ComboBoxEdit cbMateriaCadastroProduto;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem categoriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem subCategoriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem unidadeDeMedidaToolStripMenuItem;
-        private DevExpress.XtraEditors.ComboBoxEdit cbUndMedidaCadastroProduto;
-        private DevExpress.XtraEditors.ComboBoxEdit cbSubCategoriaCadastroProduto;
-        private DevExpress.XtraEditors.ComboBoxEdit cbCategoriaCadastroProduto;
+        private DevExpress.XtraEditors.LookUpEdit lkUpEditCategoriaCadastroProduto;
+        private DevExpress.XtraEditors.LookUpEdit lkUpEditMateriaCadastroProduto;
+        private DevExpress.XtraEditors.LookUpEdit lkUpEditUndMedidaCadastroProduto;
+        private DevExpress.XtraEditors.LookUpEdit lkUpEditSubCategoriaCadastroProduto;
     }
 }

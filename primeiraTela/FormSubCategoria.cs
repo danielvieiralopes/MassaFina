@@ -2,12 +2,18 @@
 using DAL;
 using Modelo;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
 using System.Windows.Forms;
 
 namespace primeiraTela
 {
     public partial class FormSubCategoria : Form
     {
+        int catCodigo;
         int codigo;
         int linha = 0;
         public FormSubCategoria()
@@ -27,16 +33,31 @@ namespace primeiraTela
         {
 
             DALConexao cx = new DALConexao(DadosdaConexao.StringDeConexao);
-            BLLSubCategoria bll = new BLLSubCategoria(cx);
-            gridViewSubCategoria.DataSource = bll.Localizar(inputInserirSubCategoria.Text);
+            BLLCategoria bll = new BLLCategoria(cx);
+            lkUpEditcbCategoriaCadastroSubCategoria.Properties.DataSource = bll.Localizar("");
+            lkUpEditcbCategoriaCadastroSubCategoria.Properties.DisplayMember = "cat_nome";
+            lkUpEditcbCategoriaCadastroSubCategoria.Properties.ValueMember = "cat_cod";
+
+            //lkUpEditcbCategoriaCadastroSubCategoria.Properties.Columns[0].
+            //lkUpEditcbCategoriaCadastroSubCategoria.Properties.Columns[0].Width = 50;
+            //lkUpEditcbCategoriaCadastroSubCategoria.Properties.Columns[1].FieldName = "Categoria";
+            //lkUpEditcbCategoriaCadastroSubCategoria.Properties.Columns[1].Width = 250;
+
+            BLLSubCategoria bllScat = new BLLSubCategoria(cx);
+            gridViewSubCategoria.DataSource = bllScat.Localizar(inputInserirSubCategoria.Text);
 
             gridViewSubCategoria.Columns[0].HeaderText = "Código";
             gridViewSubCategoria.Columns[0].Width = 50;
             gridViewSubCategoria.Columns[1].HeaderText = "Sub Categoria";
             gridViewSubCategoria.Columns[1].Width = 253;
+            gridViewSubCategoria.Columns[2].HeaderText = "Código";
+            gridViewSubCategoria.Columns[2].Width = 50;
+            gridViewSubCategoria.Columns[3].HeaderText = "Categoria";
+            gridViewSubCategoria.Columns[3].Width = 253;
 
             btnSalvarSubCategoria.Visible = false;
             btnExcluirSubCategoria.Visible = false;
+
 
         }
 
@@ -108,6 +129,7 @@ namespace primeiraTela
             {
                 ModeloSubCategoria modelo = new ModeloSubCategoria();
                 modelo.ScatNome = inputInserirSubCategoria.Text;
+                modelo.CatCod = Convert.ToInt32(catCodigo);
                 DALConexao cx = new DALConexao(DadosdaConexao.StringDeConexao);
                 BLLSubCategoria bll = new BLLSubCategoria(cx);
                 bll.Incluir(modelo);
@@ -128,6 +150,7 @@ namespace primeiraTela
                 ModeloSubCategoria modelo = new ModeloSubCategoria();
                 DALConexao cx = new DALConexao(DadosdaConexao.StringDeConexao);
                 modelo.ScatCod = Convert.ToInt32(codigo);
+                modelo.CatCod = Convert.ToInt32(catCodigo);
                 modelo.ScatNome = inputInserirSubCategoria.Text;
 
                 BLLSubCategoria bll = new BLLSubCategoria(cx);
@@ -162,6 +185,54 @@ namespace primeiraTela
             btnExcluirSubCategoria.Visible = true;
         }
 
+        private void lkUpEditcbCategoriaCadastroSubCategoria_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void lkUpEditcbCategoriaCadastroSubCategoria_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+            catCodigo = Convert.ToInt32(lkUpEditcbCategoriaCadastroSubCategoria.GetColumnValue("cat_cod"));
+
+   
+        }
+
+        private void lkUpEditcbCategoriaCadastroSubCategoria_Enter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void lkUpEditcbCategoriaCadastroSubCategoria_EditValueChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void gridViewSubCategoria_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void inputInserirSubCategoria_Enter(object sender, EventArgs e)
+        {
+            lkUpEditcbCategoriaCadastroSubCategoria.Visible = true;
+        }
+
+        private void lkUpEditcbCategoriaCadastroSubCategoria_Click(object sender, EventArgs e)
+        {
+         
+
+
+        }
+
+        private void lkUpEditcbCategoriaCadastroSubCategoria_Popup(object sender, EventArgs e)
+        {
         
+
+        }
+
+        private void lkUpEditcbCategoriaCadastroSubCategoria_QueryPopUp(object sender, CancelEventArgs e)
+        {
+        }
     }
 }

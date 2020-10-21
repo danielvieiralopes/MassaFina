@@ -41,6 +41,7 @@
             this.btnInserirSubCategoria = new System.Windows.Forms.ToolStripButton();
             this.btnSalvarSubCategoria = new System.Windows.Forms.ToolStripButton();
             this.panelControlTstripSubcategoria = new DevExpress.XtraEditors.PanelControl();
+            this.lkUpEditcbCategoriaCadastroSubCategoria = new DevExpress.XtraEditors.LookUpEdit();
             this.btnPesquisarSubCategoria = new System.Windows.Forms.PictureBox();
             this.inputInserirSubCategoria = new DevExpress.XtraEditors.TextEdit();
             this.panelControlGridSubCategoria = new DevExpress.XtraEditors.PanelControl();
@@ -53,6 +54,7 @@
             this.toolStripSubCategoria.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControlTstripSubcategoria)).BeginInit();
             this.panelControlTstripSubcategoria.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lkUpEditcbCategoriaCadastroSubCategoria.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPesquisarSubCategoria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputInserirSubCategoria.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControlGridSubCategoria)).BeginInit();
@@ -99,7 +101,7 @@
             this.btnExcluirSubCategoria,
             this.btnInserirSubCategoria,
             this.btnSalvarSubCategoria});
-            this.toolStripSubCategoria.Location = new System.Drawing.Point(2, 37);
+            this.toolStripSubCategoria.Location = new System.Drawing.Point(2, 59);
             this.toolStripSubCategoria.Name = "toolStripSubCategoria";
             this.toolStripSubCategoria.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.toolStripSubCategoria.Size = new System.Drawing.Size(372, 25);
@@ -159,6 +161,7 @@
             // 
             // panelControlTstripSubcategoria
             // 
+            this.panelControlTstripSubcategoria.Controls.Add(this.lkUpEditcbCategoriaCadastroSubCategoria);
             this.panelControlTstripSubcategoria.Controls.Add(this.btnPesquisarSubCategoria);
             this.panelControlTstripSubcategoria.Controls.Add(this.inputInserirSubCategoria);
             this.panelControlTstripSubcategoria.Controls.Add(this.pictureBoxSubCategoria);
@@ -166,8 +169,28 @@
             this.panelControlTstripSubcategoria.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControlTstripSubcategoria.Location = new System.Drawing.Point(0, 0);
             this.panelControlTstripSubcategoria.Name = "panelControlTstripSubcategoria";
-            this.panelControlTstripSubcategoria.Size = new System.Drawing.Size(376, 64);
+            this.panelControlTstripSubcategoria.Size = new System.Drawing.Size(376, 86);
             this.panelControlTstripSubcategoria.TabIndex = 31;
+            // 
+            // lkUpEditcbCategoriaCadastroSubCategoria
+            // 
+            this.lkUpEditcbCategoriaCadastroSubCategoria.Location = new System.Drawing.Point(72, 36);
+            this.lkUpEditcbCategoriaCadastroSubCategoria.Name = "lkUpEditcbCategoriaCadastroSubCategoria";
+            this.lkUpEditcbCategoriaCadastroSubCategoria.Properties.AllowHtmlDraw = DevExpress.Utils.DefaultBoolean.True;
+            this.lkUpEditcbCategoriaCadastroSubCategoria.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lkUpEditcbCategoriaCadastroSubCategoria.Properties.NullText = "";
+            this.lkUpEditcbCategoriaCadastroSubCategoria.Properties.NullValuePrompt = "Selecione a Categoria";
+            this.lkUpEditcbCategoriaCadastroSubCategoria.Properties.ShowHeader = false;
+            this.lkUpEditcbCategoriaCadastroSubCategoria.Size = new System.Drawing.Size(292, 20);
+            this.lkUpEditcbCategoriaCadastroSubCategoria.TabIndex = 31;
+            this.lkUpEditcbCategoriaCadastroSubCategoria.Popup += new System.EventHandler(this.lkUpEditcbCategoriaCadastroSubCategoria_Popup);
+            this.lkUpEditcbCategoriaCadastroSubCategoria.QueryPopUp += new System.ComponentModel.CancelEventHandler(this.lkUpEditcbCategoriaCadastroSubCategoria_QueryPopUp);
+            this.lkUpEditcbCategoriaCadastroSubCategoria.EditValueChanged += new System.EventHandler(this.lkUpEditcbCategoriaCadastroSubCategoria_EditValueChanged);
+            this.lkUpEditcbCategoriaCadastroSubCategoria.Click += new System.EventHandler(this.lkUpEditcbCategoriaCadastroSubCategoria_Click);
+            this.lkUpEditcbCategoriaCadastroSubCategoria.Enter += new System.EventHandler(this.lkUpEditcbCategoriaCadastroSubCategoria_Enter);
+            this.lkUpEditcbCategoriaCadastroSubCategoria.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lkUpEditcbCategoriaCadastroSubCategoria_MouseClick);
+            this.lkUpEditcbCategoriaCadastroSubCategoria.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lkUpEditcbCategoriaCadastroSubCategoria_MouseDoubleClick);
             // 
             // btnPesquisarSubCategoria
             // 
@@ -196,13 +219,14 @@
             this.inputInserirSubCategoria.Properties.NullValuePrompt = "Insira a Sub categoria";
             this.inputInserirSubCategoria.Size = new System.Drawing.Size(243, 20);
             this.inputInserirSubCategoria.TabIndex = 33;
+            this.inputInserirSubCategoria.Enter += new System.EventHandler(this.inputInserirSubCategoria_Enter);
             // 
             // panelControlGridSubCategoria
             // 
             this.panelControlGridSubCategoria.Controls.Add(this.gridViewSubCategoria);
-            this.panelControlGridSubCategoria.Location = new System.Drawing.Point(0, 65);
+            this.panelControlGridSubCategoria.Location = new System.Drawing.Point(0, 88);
             this.panelControlGridSubCategoria.Name = "panelControlGridSubCategoria";
-            this.panelControlGridSubCategoria.Size = new System.Drawing.Size(373, 158);
+            this.panelControlGridSubCategoria.Size = new System.Drawing.Size(373, 135);
             this.panelControlGridSubCategoria.TabIndex = 33;
             // 
             // gridViewSubCategoria
@@ -217,8 +241,9 @@
             this.gridViewSubCategoria.Location = new System.Drawing.Point(2, 2);
             this.gridViewSubCategoria.Name = "gridViewSubCategoria";
             this.gridViewSubCategoria.ReadOnly = true;
-            this.gridViewSubCategoria.Size = new System.Drawing.Size(369, 154);
+            this.gridViewSubCategoria.Size = new System.Drawing.Size(369, 131);
             this.gridViewSubCategoria.TabIndex = 29;
+            this.gridViewSubCategoria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewSubCategoria_CellContentClick);
             this.gridViewSubCategoria.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewSubCategoria_CellDoubleClick);
             this.gridViewSubCategoria.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.gridViewSubCategoria_CellMouseClick);
             // 
@@ -248,6 +273,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControlTstripSubcategoria)).EndInit();
             this.panelControlTstripSubcategoria.ResumeLayout(false);
             this.panelControlTstripSubcategoria.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lkUpEditcbCategoriaCadastroSubCategoria.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPesquisarSubCategoria)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputInserirSubCategoria.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControlGridSubCategoria)).EndInit();
@@ -275,5 +301,6 @@
         private System.Windows.Forms.ToolStripButton btnMenu;
         private System.Windows.Forms.ToolStripButton btnInserirSubCategoria;
         private System.Windows.Forms.ToolStripButton btnSalvarSubCategoria;
+        private DevExpress.XtraEditors.LookUpEdit lkUpEditcbCategoriaCadastroSubCategoria;
     }
 }

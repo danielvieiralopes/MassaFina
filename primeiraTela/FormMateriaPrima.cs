@@ -32,5 +32,10 @@ namespace primeiraTela
             f.Closed += (s, args) => this.Close();
             f.Show();
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
